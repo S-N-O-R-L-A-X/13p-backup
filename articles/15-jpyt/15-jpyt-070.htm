@@ -1,16 +1,235 @@
-<html><head><meta http-equiv="Content-Language" content="zh-cn"><meta http-equiv="Content-Type" content="text/html; charset=gb2312"><title>叫牌研讨</title><base target="_self"><style>
-<!--
--->
-</style>
-</head><body onpaste="return false" 
-oncontextmenu="return false"
-onbeforecopy="return false"
-oncopy="return false;" 
-oncut="return false;" 
-onselectstart = "return false" 
+<html>
 
-background="../../images/bj2.gif" style="text-align: center; background-attachment:fixed" topmargin="0"><TABLE width=962 align=center border=0 id="table122"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><TABLE id=table123 
-      style="BORDER-RIGHT: #282828 2px dashed; BORDER-TOP: #282828 2px dashed; BORDER-LEFT: #282828 2px dashed; BORDER-BOTTOM: #282828 2px dashed" 
-      height=136 cellSpacing=1 borderColorDark=#282828 width=962 
-      borderColorLight=#363636 background="../../images/bj3.gif" border=2><TBODY><TR><TD width=952 height=130 style="font-size: 9pt"><TABLE width=643 align=center border=0 id="table127" height="6"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><p style="line-height: 1px">　</TD></TR></TBODY></TABLE><div align="center"><TABLE cellSpacing=0 cellPadding=0 width=938 bgColor=#ffffff 
-border=0 id="table128" background="../../images/bg_01.jpg"><TBODY><TR><TD style="font-size: 13px; line-height: 17px; font-family:宋体"><blockquote><div align="center"><div align="center"><p style="line-height: 150%" align="right"><br><img border="0" src="../../images/a_rend_dark.gif" width="13" height="11"> <a href="15-jpyt-00.htm" style="text-decoration: none">返回索引</a></div><p style="line-height: 150%"><b><font size="3">不再漏掉一个局 (2)</font></b></p><p style="line-height: 150%" align="left"><font size="2">Never&nbsp;miss&nbsp;a&nbsp;game&nbsp;again <br>作者:Zar&nbsp;Petkov(Canada)&nbsp;翻译：monk <br>　</font></p><p style="line-height: 150%" align="left"><font size="2">2)哪种大牌计算方法是&quot;数学意义&quot;上正确的？ </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;这可不是个类似&quot;专家判断&quot;的问题，而是求解一系列等式中待定系数的问题。众所周知，标准的4-3-2-1计点法就是可以满足使用标准分布点的方程组的，而且HCP+controls(6-4-2-1)的方法就不是标准分布点的一个解。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;如何建立不定方程来计算呢？我们将以标准的HCP和分布点(单张，缺门，双张)计算来说明。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;X_total_points_for_game&nbsp;=&nbsp;X_aces(a)&nbsp;+&nbsp;X_kings(k)&nbsp;+&nbsp;X_queens(q)&nbsp;+ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_jacks(j)&nbsp;+&nbsp;X_void(v)&nbsp;+&nbsp;X_singleton(s)&nbsp;+ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_doubleton(d) </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;等式中a表示联手A的数目，k表示联手K的数目，其它类似。</font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;以下面这手牌为例： <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;Q10xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;KJxxx <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;Ax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;Kxx <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;xxx <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;KQxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;Ax <br>&nbsp;&nbsp;&nbsp;&nbsp;X_total_points_for_game&nbsp;=&nbsp;X_aces&nbsp;*&nbsp;2&nbsp;+&nbsp;X_kings&nbsp;*&nbsp;3&nbsp;+&nbsp;X_queens&nbsp;*&nbsp;2&nbsp;+ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_jacks&nbsp;*&nbsp;1&nbsp;+&nbsp;X_doubleton&nbsp;*&nbsp;3 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;你可以通过收集大量能够打成局的牌(4高花)带入方程确定其中的系数。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;对于上面这手牌来说，以经典的计点法来带入，即大牌4-3-2-1，牌型双张1点单张2点缺门3点的方法。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;X_totoal_points_for_game&nbsp;=&nbsp;4&nbsp;*&nbsp;2&nbsp;+&nbsp;3&nbsp;*&nbsp;3&nbsp;+&nbsp;2&nbsp;*&nbsp;2&nbsp;+&nbsp;1&nbsp;*&nbsp;1&nbsp;+&nbsp;1&nbsp;*&nbsp;3&nbsp;=&nbsp;25 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;通过大量的牌验证，你可以得出结论，用标准计法如果联手达到25点就可以进局。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;我们也用相同的办法来计算Zar&nbsp;Points方程中待定的系数。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;在讨论这个话题时，你可能会提出一些&quot;奇异&quot;的想法，比如只计算桥牌中的K和J(因为他们是male&nbsp;cards)，然后建立相应的方程，也可以得到相应的解。为什么不这样呢？答案是这种解会严重背离实际的方程。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;我们将会在文章的后半部分，给出各种计点法的详细比较，那时你会有一个清晰的认识。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;你可能已经猜到，为什么4-3-2-1的计法可以满足标准牌型点的方程，然而却不能满足Zar&nbsp;Points的方程(6-4-2-1是一个解)。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;原因就是分布点(DP)和大牌点(HP)之间存在某种对立关系。就像我们看到的一样，Zar&nbsp;Points的分布点计算可以达到26点(极端的13-0-0-0牌型)，而标准的计法最大只能是13(下面会看到)，不能补偿6-4-2-1的计法。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;也请注意，专家牌手都知道4-3-2-1计点法实际是一种&quot;扭曲&quot;的解，因为它贬低了A和K的价值，而抬高了Q和J的价值。因此一些专家也用分数来修正它，例如A价值4&nbsp;1/2而Q值1&nbsp;1/2点，这样3个Q大概和一个A的价值相当，就像6-4-2-1一样。Zar&nbsp;Points可以是6-4-2-1大牌点计算法成为不定方程组的解。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;你自己的判断 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;你是否还需要在叫牌过程中运用自己的判断，以及考虑搭档间的两手牌呢？这里有个简单的例子，可以涵盖两种情况： </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;让我们考虑两手不同的开叫牌，都有26个初始Zar&nbsp;Points，10HCP，3控制，5-4-3-1牌型，你更喜欢哪个呢？ </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;North&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;North&nbsp;B <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;86532&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;AJ1084 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;7542&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;KQ109 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;AQJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;1096 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;K&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;4 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;我想你会有个倾向性的。当然A这手牌应该大大的贬值，而第二手牌B应该有些升值因素。但是如果考虑搭档的牌，或许这种印象会发生戏剧性的变化。两种情况下，搭档的牌都有27&nbsp;Zar&nbsp;Points－10HCP，4控制，5-4-3-1牌型。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;South&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;South&nbsp;B <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;A10974&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;K <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;876 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;10865&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;A742 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;AQ6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;K9753 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;不需要什么理由吧，你肯定会改变你的&quot;喜好&quot;，应该更喜欢A这组牌。在桥牌中，总是需要良好的配合的。 </font></p><p style="line-height: 150%" align="left"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;这就需要我们来讨论下一个问题，考虑同伴和敌人叫牌中的一些调整。</font></div></blockquote><blockquote><p style="line-height: 150%" align="right"><font class="sysinfo" face="宋体" color="#808080" style="font-size: 9pt"><img border="0" src="../../images/zxdp_50.gif" width="50" height="50"></font></blockquote></div></TD></TR></TBODY></TABLE></div><TABLE width=643 align=center border=0 id="table129" height="6"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><p style="line-height: 1px">　</TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><TABLE width=745 align=center border=0 id="table130" height="9"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><hr width="960" size="1" color="#CCCCCC"></TD></TR></TBODY></TABLE><TABLE width=966 align=center border=0 id="table133" height="37"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><p align="center" style="line-height: 150%"><font color="#CCCCCC" face="Arial" style="font-size: 9pt">重要说明：本站资料大多从网上搜集得来，旨在为桥牌爱好者们提供学习交流的方便，部分内容经过重新编排整理，若有侵权，请及时告知，!<br>13P对很多桥友来说都是一个值得尊敬和留念的地方，前辈的心血不应消失掉。谢谢百度贴吧的贵州桥友xy_alpha提供了保存的数据。<br>东莞桥牌网于2013年1月15日恢复了13P在线浏览数据，并维持原创造者13P及宰相肚皮前辈的整体架构不再改动和更新!<br> 粤ICP备08117329号-8ICP备05073487号</font><font size="2" color="#CCCCCC" face="Arial">&nbsp; </font><font color="#CCCCCC" face="Arial" size="3">&copy;</font><font size="2" color="#CCCCCC" face="Arial"> 2008 <a href="../../index.html" style="text-decoration: none"><font color="#CCCCCC">www.dgbrg.com/13P/</font></a>&nbsp;&nbsp; <a href="http://www.dgbrg.com" style="text-decoration: none"><font color="#CCCCCC">东莞桥牌网</font></a>&nbsp;&nbsp; Since 2000-09-01<br><p align="center"> </font></TD></TR></TBODY></TABLE></body></html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>叫牌研讨</title>
+  <base target="_self">
+  <style>
+    <!--
+    -->
+  </style>
+</head>
+
+<body onpaste="return false" oncontextmenu="return false" onbeforecopy="return false" oncopy="return false;"
+  oncut="return false;" onselectstart="return false" background="../../images/bj2.gif"
+  style="text-align: center; background-attachment:fixed" topmargin="0">
+  <TABLE width=962 align=center border=0 id="table122">
+    <TBODY>
+      <TR>
+        <TD style="font-size: 13px; line-height: 17px">
+          <TABLE id=table123
+            style="BORDER-RIGHT: #282828 2px dashed; BORDER-TOP: #282828 2px dashed; BORDER-LEFT: #282828 2px dashed; BORDER-BOTTOM: #282828 2px dashed"
+            height=136 cellSpacing=1 borderColorDark=#282828 width=962 borderColorLight=#363636
+            background="../../images/bj3.gif" border=2>
+            <TBODY>
+              <TR>
+                <TD width=952 height=130 style="font-size: 9pt">
+                  <TABLE width=643 align=center border=0 id="table127" height="6">
+                    <TBODY>
+                      <TR>
+                        <TD style="font-size: 13px; line-height: 17px">
+                          <p style="line-height: 1px">　
+                        </TD>
+                      </TR>
+                    </TBODY>
+                  </TABLE>
+                  <div align="center">
+                    <TABLE cellSpacing=0 cellPadding=0 width=938 bgColor=#ffffff border=0 id="table128"
+                      background="../../images/bg_01.jpg">
+                      <TBODY>
+                        <TR>
+                          <TD style="font-size: 13px; line-height: 17px; font-family:宋体">
+                            <blockquote>
+                              <div align="center">
+                                <div align="center">
+                                  <p style="line-height: 150%" align="right"><br><img border="0"
+                                      src="../../images/a_rend_dark.gif" width="13" height="11"> <a
+                                      href="15-jpyt-00.htm" style="text-decoration: none">返回索引</a>
+                                </div>
+                                <p style="line-height: 150%"><b>
+                                    <font size="3">不再漏掉一个局 (2)</font>
+                                  </b></p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">Never&nbsp;miss&nbsp;a&nbsp;game&nbsp;again
+                                    <br>作者:Zar&nbsp;Petkov(Canada)&nbsp;翻译：monk <br>　</font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">2)哪种大牌计算方法是&quot;数学意义&quot;上正确的？ </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;这可不是个类似&quot;专家判断&quot;的问题，而是求解一系列等式中待定系数的问题。众所周知，标准的4-3-2-1计点法就是可以满足使用标准分布点的方程组的，而且HCP+controls(6-4-2-1)的方法就不是标准分布点的一个解。
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;如何建立不定方程来计算呢？我们将以标准的HCP和分布点(单张，缺门，双张)计算来说明。
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;X_total_points_for_game&nbsp;=&nbsp;X_aces(a)&nbsp;+&nbsp;X_kings(k)&nbsp;+&nbsp;X_queens(q)&nbsp;+
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_jacks(j)&nbsp;+&nbsp;X_void(v)&nbsp;+&nbsp;X_singleton(s)&nbsp;+
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_doubleton(d)
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;等式中a表示联手A的数目，k表示联手K的数目，其它类似。</font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;以下面这手牌为例：
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;Q10xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;KJxxx
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;Ax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;Kxx
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;xxx
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;KQxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;Ax
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;X_total_points_for_game&nbsp;=&nbsp;X_aces&nbsp;*&nbsp;2&nbsp;+&nbsp;X_kings&nbsp;*&nbsp;3&nbsp;+&nbsp;X_queens&nbsp;*&nbsp;2&nbsp;+
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X_jacks&nbsp;*&nbsp;1&nbsp;+&nbsp;X_doubleton&nbsp;*&nbsp;3
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;你可以通过收集大量能够打成局的牌(4高花)带入方程确定其中的系数。 </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;对于上面这手牌来说，以经典的计点法来带入，即大牌4-3-2-1，牌型双张1点单张2点缺门3点的方法。 </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;X_totoal_points_for_game&nbsp;=&nbsp;4&nbsp;*&nbsp;2&nbsp;+&nbsp;3&nbsp;*&nbsp;3&nbsp;+&nbsp;2&nbsp;*&nbsp;2&nbsp;+&nbsp;1&nbsp;*&nbsp;1&nbsp;+&nbsp;1&nbsp;*&nbsp;3&nbsp;=&nbsp;25
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;通过大量的牌验证，你可以得出结论，用标准计法如果联手达到25点就可以进局。 </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;我们也用相同的办法来计算Zar&nbsp;Points方程中待定的系数。 </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;在讨论这个话题时，你可能会提出一些&quot;奇异&quot;的想法，比如只计算桥牌中的K和J(因为他们是male&nbsp;cards)，然后建立相应的方程，也可以得到相应的解。为什么不这样呢？答案是这种解会严重背离实际的方程。
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;我们将会在文章的后半部分，给出各种计点法的详细比较，那时你会有一个清晰的认识。 </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;你可能已经猜到，为什么4-3-2-1的计法可以满足标准牌型点的方程，然而却不能满足Zar&nbsp;Points的方程(6-4-2-1是一个解)。
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;原因就是分布点(DP)和大牌点(HP)之间存在某种对立关系。就像我们看到的一样，Zar&nbsp;Points的分布点计算可以达到26点(极端的13-0-0-0牌型)，而标准的计法最大只能是13(下面会看到)，不能补偿6-4-2-1的计法。
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;也请注意，专家牌手都知道4-3-2-1计点法实际是一种&quot;扭曲&quot;的解，因为它贬低了A和K的价值，而抬高了Q和J的价值。因此一些专家也用分数来修正它，例如A价值4&nbsp;1/2而Q值1&nbsp;1/2点，这样3个Q大概和一个A的价值相当，就像6-4-2-1一样。Zar&nbsp;Points可以是6-4-2-1大牌点计算法成为不定方程组的解。
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;你自己的判断 </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;你是否还需要在叫牌过程中运用自己的判断，以及考虑搭档间的两手牌呢？这里有个简单的例子，可以涵盖两种情况： </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;让我们考虑两手不同的开叫牌，都有26个初始Zar&nbsp;Points，10HCP，3控制，5-4-3-1牌型，你更喜欢哪个呢？
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;North&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;North&nbsp;B
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;86532&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;AJ1084
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;7542&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;KQ109
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;AQJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;1096
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;K&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;4
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;我想你会有个倾向性的。当然A这手牌应该大大的贬值，而第二手牌B应该有些升值因素。但是如果考虑搭档的牌，或许这种印象会发生戏剧性的变化。两种情况下，搭档的牌都有27&nbsp;Zar&nbsp;Points－10HCP，4控制，5-4-3-1牌型。
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;South&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;South&nbsp;B
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;A10974&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;K
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;876
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;10865&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;A742
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;AQ6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;K9753
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;不需要什么理由吧，你肯定会改变你的&quot;喜好&quot;，应该更喜欢A这组牌。在桥牌中，总是需要良好的配合的。
+                                  </font>
+                                </p>
+                                <p style="line-height: 150%" align="left">
+                                  <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;这就需要我们来讨论下一个问题，考虑同伴和敌人叫牌中的一些调整。</font>
+                              </div>
+                            </blockquote>
+                            <blockquote>
+                              <p style="line-height: 150%" align="right">
+                                <font class="sysinfo" face="宋体" color="#808080" style="font-size: 9pt"><img border="0"
+                                    src="../../images/zxdp_50.gif" width="50" height="50"></font>
+                            </blockquote>
+                  </div>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          </div>
+          <TABLE width=643 align=center border=0 id="table129" height="6">
+            <TBODY>
+              <TR>
+                <TD style="font-size: 13px; line-height: 17px">
+                  <p style="line-height: 1px">　
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+          </DIV>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  </TD>
+  </TR>
+  </TBODY>
+  </TABLE>
+  <TABLE width=745 align=center border=0 id="table130" height="9">
+    <TBODY>
+      <TR>
+        <TD style="font-size: 13px; line-height: 17px">
+          <hr width="960" size="1" color="#CCCCCC">
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <TABLE width=966 align=center border=0 id="table133" height="37">
+    <TBODY>
+      <TR>
+        <TD style="font-size: 13px; line-height: 17px">
+          <p align="center" style="line-height: 150%">
+            <font color="#CCCCCC" face="Arial" style="font-size: 9pt">
+              重要说明：本站资料大多从网上搜集得来，旨在为桥牌爱好者们提供学习交流的方便，部分内容经过重新编排整理，若有侵权，请及时告知，!<br>13P对很多桥友来说都是一个值得尊敬和留念的地方，前辈的心血不应消失掉。谢谢百度贴吧的贵州桥友xy_alpha提供了保存的数据。<br>东莞桥牌网于2013年1月15日恢复了13P在线浏览数据，并维持原创造者13P及宰相肚皮前辈的整体架构不再改动和更新!<br>
+              粤ICP备08117329号-8ICP备05073487号</font>
+            <font size="2" color="#CCCCCC" face="Arial">&nbsp; </font>
+            <font color="#CCCCCC" face="Arial" size="3">&copy;</font>
+            <font size="2" color="#CCCCCC" face="Arial"> 2008 <a href="../../index.html" style="text-decoration: none">
+                <font color="#CCCCCC">www.dgbrg.com/13P/</font>
+              </a>&nbsp;&nbsp; <a href="http://www.dgbrg.com" style="text-decoration: none">
+                <font color="#CCCCCC">东莞桥牌网</font>
+              </a>&nbsp;&nbsp; Since 2000-09-01<br>
+              <p align="center">
+            </font>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+</body>
+
+</html>

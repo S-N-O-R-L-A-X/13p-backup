@@ -1,54 +1,1555 @@
-<html><head><meta http-equiv="Content-Language" content="zh-cn"><meta http-equiv="Content-Type" content="text/html; charset=gb2312"><title>桥牌逻辑</title><base target="_self"><style><!--
--->
-</style><body onpaste="return false"
-oncontextmenu="return false"
-onbeforecopy="return false"
-oncopy="return false;"
-oncut="return false;"
-onselectstart ="return false"
-background="../../../images/bj2.gif" style="text-align: center; background-attachment:fixed" topmargin="0">
-<TABLE width=971 align=center border=0 id="table122"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><DIV align=center><TABLE id=table123
-style="BORDER-RIGHT: #282828 2px dashed; BORDER-TOP: #282828 2px dashed; BORDER-LEFT: #282828 2px dashed; BORDER-BOTTOM: #282828 2px dashed"
-height=136 cellSpacing=1 borderColorDark=#282828 width=962
-borderColorLight=#363636 background="../../../images/bj3.gif" border=2>
-<TBODY><TR><TD width=952 height=130 style="font-size: 9pt"><DIV align=center><TABLE width=643 align=center border=0 id="table127" height="6"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><p style="line-height: 1px">　</TR></TABLE><div align="center"><TABLE cellSpacing=0 cellPadding=0 width=938 bgColor=#ffffff
-border=0 id="table128" background="../../../images/bg_01.jpg">
-<TBODY><TR><TD style="font-size: 13px; line-height: 17px; font-family:宋体"><blockquote><div align="center"><div align="center"><TABLE width=856 border=0 id="table134" height="6"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><p style="line-height: 100%"><font color="#800000"><b><font size="3"><br>桥牌逻辑</font></b><font size="2">&nbsp;&nbsp; H.W.Kelsey 凯尔西 著&nbsp;&nbsp; 周家骝 译<br>&nbsp; </font></font><TD style="font-size: 13px; line-height: 17px" width="145"><p style="line-height: 100%" align="right"><font color="#800000"><img border="0" src="../../../images/a_rend_dark.gif" width="13" height="11"></font><font color="#FFFFFF">.</font><a href="../04-gfjq-00.htm" style="text-decoration: none"><font color="#800000">返回目录</font></a></TR></TABLE><div align="center"><TABLE width=856 border=0 id="table135" height="6"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ0.htm" style="text-decoration: none" href="04-gfjq-034-0a.htm">著者序</a></font></span><TD style="font-size: 13px; line-height: 17px" width="140"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ2.htm" href="04-gfjq-034-02.htm" style="text-decoration: none">2、从计算中来</a></font></span><TD style="font-size: 13px; line-height: 17px" width="140"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ4.htm" href="04-gfjq-034-04.htm" style="text-decoration: none">4、打牌中的启示</a></font></span><TD style="font-size: 13px; line-height: 17px" width="160"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ6.htm" href="04-gfjq-034-06.htm" style="text-decoration: none">6、给指定的对手出牌</a></font></span><TD style="font-size: 13px; line-height: 17px" width="145"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ8.htm" href="04-gfjq-034-08.htm" style="text-decoration: none">8、攻掉对方进张</a></font></span><TD style="font-size: 13px; line-height: 17px" width="120" align="right"><p style="line-height: 100%"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ10.htm" href="04-gfjq-034-10.htm" style="text-decoration: none">10、打最好的概率</a></font></span></TR></TABLE><div align="center"><TABLE width=856 border=0 id="table137" height="6"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ1.htm" href="04-gfjq-034-01.htm" style="text-decoration: none">1、奇妙的数字</a></font></span><TD style="font-size: 13px; line-height: 17px" width="140"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ3.htm" href="04-gfjq-034-03.htm" style="text-decoration: none">3、叫牌中的回声</a></font></span><TD style="font-size: 13px; line-height: 17px" width="140"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ5.htm" href="04-gfjq-034-05.htm" style="text-decoration: none">5、保留一个选择</a></font></span><TD style="font-size: 13px; line-height: 17px" width="160"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ7.htm" href="04-gfjq-034-07.htm" style="text-decoration: none">7、做出一个选择</a></font></span><TD style="font-size: 13px; line-height: 17px" width="145"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ9.htm" href="04-gfjq-034-09.htm" style="text-decoration: none">9、打掉对方脱手张</a></font></span><TD style="font-size: 13px; line-height: 17px" width="120" align="right"><p style="line-height: 100%"><img border="0" src="../../../images/jsmenu_a.gif" width="10" height="10"><span style="font-weight: 400"><font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ11.htm" href="04-gfjq-034-11.htm" style="text-decoration: none">11、全在恰好时机</a></font></span></TR></TABLE></div></div></div><div align="center"><TABLE width=856 border=0 id="table136" height="6"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><hr color="#800000" size="1"></TR></TABLE></div><h3 style="line-height: 150%"><font size="3">第8章&nbsp; 攻掉对方进张</font></h3><p style="line-height: 150%" align="left"><font size="2"><br>在你学会了照顾和处理联手牌中的进张问题时，你还只不过在解决联通问题的道路上行进了一段旅程。在很大一类牌例中，你是否能够成功，并不取决于你能保留住自己的进张，而是取决于你能否阻止防守方两人发挥他们的进张的最大作用。凡是那些不能允许你采取叫将牌并树立你赢墩这种常规打法的牌例，都属于这类牌例。在这类牌例中，有某些因素会引起你的警惕，使你意识到如果你对防守方的活动能力不加注意，防守方就会想出办法把你的定约击败。</font></p><p style="line-height: 150%" align="left"><font size="2">意识到了有危险，还只不过进行了一半的战斗。如果你打算采取有效的对抗措施，你就必须首先弄清楚危险之所在。这里的威胁可能是一个对手会进行将吃，或者是对方有可能会获得一个将牌升级赢墩，这时可以采用把一个花色的输张转换成另一个花色的输张这种对策，而将威胁解除。此外，有时候你会受到燃眉之急的强迫将吃打法的威胁，这时你只有依靠以正确次序攻掉对方的进张这种办法，才能克服这种威胁。一个危险的防守人，常常可以在一个早期阶段，亦即在他的赢张还未做好的时候，因为他的进张被你攻掉，而变成为一个毫无危险的防守人。在另外某些牌例中，则有可能需要安排好某一特定花色的联通，以便为投入打法作好准备。</font></p><p style="line-height: 150%" align="left"><font size="2">庄家享有一个有利之点，就是他对于防守方的进张在运用时机上，握有一定的控制力。使防守方两人之间不能互相联通的一个最简单方便的方法，就是缓拿打法（hold-up
-play）。庄家一直让到一个防守人的这个花色的牌张完全打完的时候，才用他这个花色的止张拿进。用这个办法，庄家就可以解除掉对方树立长套所产生的威胁。缓拿打法对于大多数牌手当然都是很熟悉的，因此在本章中，将重点讨论攻掉进张的其他一些办法。</font></p><p style="line-height: 150%" align="left"><font size="2">现在你可以试一试下面的4<img src="s.gif" width="13" height="11">定约，看看应该如何打法？</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table138"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A 7 4<br><img src="h.gif" width="13" height="11"> K J 6 3<br><img src="d.gif" width="13" height="11"> K 10 4<br><img src="c.gif" width="13" height="11"> K 10 7</font><td width="64%" colSpan="2"><p style="line-height: 150%" align="left"><font size="2">南北有局&nbsp; 南发牌</font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">南</font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">北</font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">1<img src="s.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">3NT</font></tr><tr><td width="36%" rowSpan="2"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td vAlign="top" width="32%"><p style="line-height: 150%" align="left"><font size="2">4<img src="s.gif" width="13" height="11"></font><td vAlign="top" width="32%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="2" rowSpan="2"><p style="line-height: 150%" align="left"></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> Q J 9 8 5 2<br><img src="h.gif" width="13" height="11"> 7<br><img src="d.gif" width="13" height="11"> 3<br><img src="c.gif" width="13" height="11"> A Q J 6 4</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="h.gif" width="13" height="11">10，你明手盖<img src="h.gif" width="13" height="11">J，东用<img src="h.gif" width="13" height="11">Q得。东换出<img src="c.gif" width="13" height="11">8。你计划如何打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">从表面上看，这里最多只有 3 个可能的输张，即 1 墩<img src="h.gif" width="13" height="11">、1 墩<img src="d.gif" width="13" height="11">和 1 墩<img src="s.gif" width="13" height="11">。但是，对于东回出的这张<img src="c.gif" width="13" height="11">，值得加以注意。看来东是准备将吃一次<img src="c.gif" width="13" height="11">，而危险可能是他持有<img src="s.gif" width="13" height="11">KXX三张将牌。如果真是这样，则连打<img src="s.gif" width="13" height="11">A和另一小<img src="s.gif" width="13" height="11">的打法，就不是一个好的办法。因为东在用<img src="s.gif" width="13" height="11">K得进第二轮<img src="s.gif" width="13" height="11">时，可能会回出<img src="d.gif" width="13" height="11">给他同伴的<img src="d.gif" width="13" height="11">A，从而得到一次<img src="c.gif" width="13" height="11">将吃，成为宕墩。</font></p><p style="line-height: 150%" align="left"><font size="2">这个问题的解决办法，只要你想一想，其实是很简单的，就是把你的一个<img src="d.gif" width="13" height="11">输墩转换成一个<img src="h.gif" width="13" height="11">输墩，不让西得牌进手就行了。所以你应当由明手得进这墩<img src="c.gif" width="13" height="11">，接着由明手出<img src="h.gif" width="13" height="11">K，在东盖上<img src="h.gif" width="13" height="11">A时，你暗手垫掉<img src="d.gif" width="13" height="11">。将吃东回出的红牌，然后连打<img src="s.gif" width="13" height="11">A及另一<img src="s.gif" width="13" height="11">，这样就可以使防守方无法将吃<img src="c.gif" width="13" height="11">。</font></p><p style="line-height: 150%" align="left"><font size="2">这个打法是剪刀妙招的一个例子，之所以称为剪刀妙招，就是因为它的作用就如剪刀一样把对方的联通剪断。实际上这是一种输张垫输张（loser on
-loser）打法，目的在于把出牌权让给一个安全的对手。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table139"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> 10 9 7 5 4<br><img src="h.gif" width="13" height="11"> 6<br><img src="d.gif" width="13" height="11"> A K Q 8<br><img src="c.gif" width="13" height="11"> K Q 3</font><td width="64%" colSpan="2"><p style="line-height: 150%" align="left"><font size="2">双方有局&nbsp; 南发牌</font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">南</font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">北</font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">1<img src="s.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">3<img src="d.gif" width="13" height="11"></font></tr><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">3<img src="h.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">3<img src="s.gif" width="13" height="11"></font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">4<img src="s.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="2" rowSpan="2"><p style="line-height: 150%" align="left"></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A K J 6 2<br><img src="h.gif" width="13" height="11"> Q J 9 7<br><img src="d.gif" width="13" height="11"> 10 9 5<br><img src="c.gif" width="13" height="11"> 2</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="c.gif" width="13" height="11">J，明手盖<img src="c.gif" width="13" height="11">K，东用<img src="c.gif" width="13" height="11">A赢进。东回出<img src="c.gif" width="13" height="11">，你暗手垫一<img src="h.gif" width="13" height="11">，西跟<img src="c.gif" width="13" height="11">10，明手<img src="c.gif" width="13" height="11">Q得进。在你由明手打一将牌给暗手的<img src="s.gif" width="13" height="11">A时，西垫<img src="d.gif" width="13" height="11">2。你计划怎样打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">这副牌看来一般应能做成 11 墩。等明手一得牌进手，就可由明手出将牌进行标明的飞，捉住东的<img src="s.gif" width="13" height="11">Q，从而只失 1 墩<img src="c.gif" width="13" height="11">和
-1 墩<img src="h.gif" width="13" height="11">。然而在你这个定约看起来特别容易的时候，你按照惯例问问自己会不会有什么意外情况发生，应当是很有好处的。</font></p><p style="line-height: 150%" align="left"><font size="2">答案就是东的<img src="d.gif" width="13" height="11">可能缺门。如果真是这样，则在第 4 墩牌时假若你由暗手出一<img src="d.gif" width="13" height="11">，东就会将吃，并回出<img src="h.gif" width="13" height="11">让他同伴得进，东再将吃一次<img src="d.gif" width="13" height="11">而将定约击败。</font></p><p style="line-height: 150%" align="left"><font size="2">这个牌例是桥牌桌上检验警觉性的一个很好的例子。虽然这里并没有任何理由足以怀疑<img src="d.gif" width="13" height="11">花色作这样奇型的分配，但是做好准备以对付它，则是不需要你付出任何代价的。一墩<img src="h.gif" width="13" height="11">迟早是要丢失的，而丢失这墩<img src="h.gif" width="13" height="11">的正确时机就是在打第
-4 墩的时候。这时由暗手出一<img src="h.gif" width="13" height="11">送给防守方，就可使得防守方两人之间无法联通，从而既可保证 10 墩牌，又可毫不降低打成 11
-墩牌的机会。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table140"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> Q 10 8 4 3<br><img src="h.gif" width="13" height="11"> Q 7 5 2<br><img src="d.gif" width="13" height="11"> J 4<br><img src="c.gif" width="13" height="11"> 6 2</font><td width="64%" colSpan="2"><p style="line-height: 150%" align="left"><font size="2">双方有局&nbsp; 南发牌</font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">南</font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">北</font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">2<img src="c.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">2<img src="d.gif" width="13" height="11"></font></tr><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">2<img src="h.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">4<img src="h.gif" width="13" height="11"></font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">6<img src="h.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="2" rowSpan="2"><p style="line-height: 150%" align="left"></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A<br><img src="h.gif" width="13" height="11"> A K J 10 8<br><img src="d.gif" width="13" height="11"> A K 6<br><img src="c.gif" width="13" height="11"> A 10 7 3</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="h.gif" width="13" height="11">3，明手牌摊出之后，可以看出这个首攻看来是防守方的一个好的开端。你明手跟小，东垫<img src="d.gif" width="13" height="11">2，你用<img src="h.gif" width="13" height="11">8得进。你计划怎样往下打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">这里在副牌花色中一共只有 4 个顶张赢墩，并且又没有能够做出第 5 个赢墩的任何前景。因此你需要一共得到 8 墩将牌，也就是说剩下得 7
-张将牌必须全部分开各自单独拿到才行。从理论上看，应该能够由明手将吃 2 次<img src="c.gif" width="13" height="11">和 1 次<img src="d.gif" width="13" height="11">，但实际上却有困难。如果你先送掉
-1 墩<img src="c.gif" width="13" height="11">，准备以后进行交叉将吃，西多半会得进这墩<img src="c.gif" width="13" height="11">，并回出第二轮将牌，这样你就少了 1 墩牌。</font></p><p style="line-height: 150%" align="left"><font size="2">在任何别的首攻情况下，这个6<img src="s.gif" width="13" height="11">定约都是很容易打成的。这里没有什么办法，能够阻止防守人叫第二轮将牌？</font></p><p style="line-height: 150%" align="left"><font size="2">至少你已经知道，东是没有将牌可出的。如果在<img src="c.gif" width="13" height="11">花色上你无法能够不让西进手，则在<img src="d.gif" width="13" height="11">花色你可能有较好的运气。这里当然没有肯定成功的保证，然而你却有一个很好的机会值得试试，就是在第二墩牌时由暗手出小<img src="d.gif" width="13" height="11">。如果东持<img src="d.gif" width="13" height="11">Q，并且西至少有
-3 张<img src="d.gif" width="13" height="11">时，你就能够做成定约。你在得进东回出的牌后，就兑现<img src="d.gif" width="13" height="11">A和 K，垫掉明手一个<img src="c.gif" width="13" height="11">输张，再兑现<img src="c.gif" width="13" height="11">A，然后把剩下的牌全部交叉将吃，从而得到
-12 墩牌。</font></p><p style="line-height: 150%" align="left"><font size="2">下面一个牌例，情况比较复杂一些。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table141"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> 9<br><img src="h.gif" width="13" height="11"> 7 3<br><img src="d.gif" width="13" height="11"> 10 8 7 6 4 3 2<br><img src="c.gif" width="13" height="11"> Q 9 4</font><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">东西有局&nbsp; 西发牌</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">西</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">北</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">东</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">南</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">1<img src="c.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">3<img src="c.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">4<img src="s.gif" width="13" height="11"></font></tr><tr><td width="36%" rowSpan="2"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">×</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="4" rowSpan="2"><p style="line-height: 150%" align="left"></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> K Q J 6 5 4 2<br><img src="h.gif" width="13" height="11"> A K Q J<br><img src="d.gif" width="13" height="11"> 9<br><img src="c.gif" width="13" height="11"> 5</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="d.gif" width="13" height="11">A，明手牌摊出后你感到略为高兴。在第一墩牌上东掉出<img src="d.gif" width="13" height="11">K，西再出<img src="d.gif" width="13" height="11">5给东的<img src="d.gif" width="13" height="11">J。你将吃之后怎样往下打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">这个定约并非已经完全绝望，你没有必要惋惜你没有更多的将牌中间张。由于西叫加倍，<img src="s.gif" width="13" height="11">A多半在他的手中，所以你必须希望他没有
-4 张将牌。但是，即使将牌是 3—2分配，形势仍旧十分危险，如果你此刻就打将牌，你能看到会出现什么情况吗？西将立即得进，并回出<img src="c.gif" width="13" height="11">让同伴进手，由东再回出一<img src="d.gif" width="13" height="11">，就能够为防守方升级出第二个将牌赢墩。</font></p><p style="line-height: 150%" align="left"><font size="2">在这个牌例的具体情况下，看来是无法能够不让东进手出牌的。然而东手中只剩下 1 张<img src="d.gif" width="13" height="11">，如果你能设法进入明手，你就可以自己由明手出一<img src="d.gif" width="13" height="11">，垫掉暗手的<img src="c.gif" width="13" height="11">输张，从而实现一个剪刀妙招。这样既解除了<img src="d.gif" width="13" height="11">花色上的险恶形势，又可以避免一个将牌升级的威胁。</font></p><p style="line-height: 150%" align="left"><font size="2">进入明手的一个明显的办法，就是希望<img src="h.gif" width="13" height="11">为 4—3 分配，并由明手将吃第三轮<img src="h.gif" width="13" height="11">。但是，如果你对形势加以更深入一些的分析，你就会发现这个打牌路线，就象乘坐一艘漏气的橡皮舟横渡尼加拉瓜一样的危险。问题在于，如果东持有
-4 张<img src="h.gif" width="13" height="11">，则他在得进<img src="d.gif" width="13" height="11">赢墩时，仍会回出<img src="h.gif" width="13" height="11">给他同伴将吃。再进一步看看，即使西持有
-4 张<img src="h.gif" width="13" height="11">，也同样是危险的，因为你无法阻止西将吃他同伴的<img src="d.gif" width="13" height="11">Q。然后西回出一<img src="h.gif" width="13" height="11">，就可让东得以将吃而拿到宕墩。因此，看来不管<img src="h.gif" width="13" height="11">是怎样的
-4—3 分配，明手将吃第三轮<img src="h.gif" width="13" height="11">这个打法都不是正确的。</font></p><p style="line-height: 150%" align="left"><font size="2">然而持有 4 张<img src="h.gif" width="13" height="11">的那个防守人，如果同时还拿着<img src="s.gif" width="13" height="11">10，你就能够由明手将吃第 4 轮<img src="h.gif" width="13" height="11">，而有可能获得成功。只要不出现将牌超吃，你就按预定计划由明手出<img src="d.gif" width="13" height="11">，暗手垫掉<img src="c.gif" width="13" height="11">输张。（译注：如果西持<img src="s.gif" width="13" height="11">10，东持<img src="s.gif" width="13" height="11">AX，则东再用将牌<img src="s.gif" width="13" height="11">A超吃第
-4 轮<img src="h.gif" width="13" height="11">之后，先兑现<img src="c.gif" width="13" height="11">A，再回出<img src="d.gif" width="13" height="11">就可使西的<img src="s.gif" width="13" height="11">10升级为赢墩，而将定约击败一墩）。</font></p><p style="line-height: 150%" align="left"><font size="2">这是真正能有机会做成这个定约的唯一的打牌路线。这时你所希望的牌张的整个分配情况，如下面全副牌所示：</font></p><p style="line-height: 150%" align="left"><font size="2">显然，这个打法有可能宕 2（译注：如果西持<img src="s.gif" width="13" height="11">A873，东持单张<img src="s.gif" width="13" height="11">10，定约就将宕
-2），但即使这样也值得冒险一试。</font></p><p style="line-height: 150%" align="left"><font size="2">让对方的一个进张失去作用的另一办法，在下面的一个牌例中加以说明。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table142"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> 5<br><img src="h.gif" width="13" height="11"> K 10 6 5 3<br><img src="d.gif" width="13" height="11"> K 7 6 2<br><img src="c.gif" width="13" height="11"> K J 2</font><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">东西有局&nbsp; 北发牌</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">西</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">北</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">东</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">南</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">4<img src="s.gif" width="13" height="11"></font></tr><tr><td width="36%" rowSpan="2"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"></tr><tr><td width="64%" colSpan="4" rowSpan="2"><p style="line-height: 150%" align="left"></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A Q J 8 7 4 2<br><img src="h.gif" width="13" height="11"> 7<br><img src="d.gif" width="13" height="11"> Q J<br><img src="c.gif" width="13" height="11"> Q 10 9</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">在你的4<img src="s.gif" width="13" height="11">关煞叫之后，别人都不叫牌，西首攻<img src="h.gif" width="13" height="11">9。明手牌摊出后你甚为高兴，因为看到这个定约确有机会可以做成。你看到的机会在哪里？</font></p><p style="line-height: 150%" align="left"><font size="2">你必须希望将牌的分配对你有利，这是当然的。由于在每个副牌花色中都有一个输张，所以你不允许再丢失 1 墩将牌，因而需要东的将牌是双张<img src="s.gif" width="13" height="11">K。</font></p><p style="line-height: 150%" align="left"><font size="2">由于首攻的这张<img src="d.gif" width="13" height="11">9表明西的<img src="d.gif" width="13" height="11">是短牌，所以对于<img src="d.gif" width="13" height="11">花色的形势需要加以考虑。如果这个<img src="d.gif" width="13" height="11">9是单张，你将没有任何办法能够避免失败。如果西的<img src="d.gif" width="13" height="11">是双张，情况又将如何呢？假如你明手跟小牌<img src="d.gif" width="13" height="11">，则东肯定会暂时缓拿他的<img src="d.gif" width="13" height="11">A，以便保持他和他同伴之间的联通。以后在你打<img src="c.gif" width="13" height="11">意欲进入明手时，对方就会接连兑现他们的<img src="c.gif" width="13" height="11">A、<img src="h.gif" width="13" height="11">A和<img src="d.gif" width="13" height="11">A，接着东再回出一张<img src="d.gif" width="13" height="11">，就可为他们防守方升级出来一个将牌赢张，成为宕墩。</font></p><p style="line-height: 150%" align="left"><font size="2">在<img src="d.gif" width="13" height="11">为 5—2 分配的情况下，你要能有机会做成定约，就必须第一墩牌由明手打<img src="d.gif" width="13" height="11">K。如果东除<img src="d.gif" width="13" height="11">A外别无其他进张，你的这个打法就会给东造成一个无法解决的难题。假如东放掉他这墩<img src="d.gif" width="13" height="11">，你就得以立即叫出将牌；而如果他用<img src="d.gif" width="13" height="11">A得进，他就会失掉给同伴升级出来一个将牌赢墩的机会。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table143"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> K 6<br><img src="h.gif" width="13" height="11"> Q 8 4 3<br><img src="d.gif" width="13" height="11"> A J 9 4<br><img src="c.gif" width="13" height="11"> 10 6 2</font><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">比赛分制对式比赛</font></tr><tr><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">双方无局&nbsp; 东发牌</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">西</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">北</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">东</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">南</font></tr><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="16%"><p style="line-height: 150%" align="left"><td width="16%"><p style="line-height: 150%" align="left"><td width="16%"><p style="line-height: 150%" align="left"><font size="2">1<img src="h.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">1<img src="s.gif" width="13" height="11"></font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">2<img src="d.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">2<img src="s.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">3<img src="c.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">3<img src="d.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">3<img src="s.gif" width="13" height="11"></font></tr><tr><td width="36%" rowSpan="2"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> Q J 10 9 4 2<br><img src="h.gif" width="13" height="11"> 9 6<br><img src="d.gif" width="13" height="11"> 6<br><img src="c.gif" width="13" height="11"> A J 9 5</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">×</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td vAlign="top" width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="c.gif" width="13" height="11">7，东出<img src="c.gif" width="13" height="11">Q，你暗手用<img src="c.gif" width="13" height="11">A得进。你由暗手出一<img src="s.gif" width="13" height="11">给明手的<img src="s.gif" width="13" height="11">K，赢得了这墩牌。但在第二轮<img src="s.gif" width="13" height="11">上东垫<img src="h.gif" width="13" height="11">7，西用<img src="s.gif" width="13" height="11">A得进并回出<img src="h.gif" width="13" height="11">2。你计划如何打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">虽然这个定约你无法做成，因为你必须丢失 1 墩<img src="s.gif" width="13" height="11">、2 墩<img src="h.gif" width="13" height="11">和 1 墩<img src="c.gif" width="13" height="11">将吃。负
-100 分应该是一个还可以的得分，因为这副牌对方能够做成3<img src="d.gif" width="13" height="11">而得到正 110 分。所以你应当尽一切可能避免宕 2 而失 300
-分。</font></p><p style="line-height: 150%" align="left"><font size="2">西换攻的这张<img src="h.gif" width="13" height="11">2，你认为是一张什么样的牌？如果这是一个单张，你是没有什么可担忧的。这张<img src="h.gif" width="13" height="11">肯定不会是从
-3 张<img src="h.gif" width="13" height="11">中攻出来的，否则对方的叫牌就没有意义（译注：根据东的叫牌情况看，东应该至少持有 5 张<img src="h.gif" width="13" height="11">）。然而这里却有一个危险，就是西的<img src="h.gif" width="13" height="11">2可能是从<img src="h.gif" width="13" height="11">K2双张中攻出的。如果真是这样，则假若你明手跟小<img src="h.gif" width="13" height="11">，东就可以用<img src="h.gif" width="13" height="11">10得进，接着兑现<img src="c.gif" width="13" height="11">K，再出一<img src="c.gif" width="13" height="11">给西将吃。于是东就会等着用<img src="h.gif" width="13" height="11">A把他同伴的<img src="h.gif" width="13" height="11">K超得过来，然后又打一<img src="c.gif" width="13" height="11">给西第二次将吃，从而使你宕
-2。</font></p><p style="line-height: 150%" align="left"><font size="2">为了对付这个可能的情况，你必须在西的<img src="h.gif" width="13" height="11">2上盖打<img src="h.gif" width="13" height="11">Q，以便把对方在<img src="h.gif" width="13" height="11">花色上的联通切断。这样东在<img src="h.gif" width="13" height="11">上就不可能再有第二个进张（译注：在假设西持<img src="h.gif" width="13" height="11">K2的情况下可以成功，在其他情况下均将失败），从而得以限制防守方只能有一次<img src="c.gif" width="13" height="11">将吃。</font></p><p style="line-height: 150%" align="left"><font size="2">用第二手高（second hand high）的办法来破坏对方的进张飞牌打法（entry finesse），作为防守方的措施是更为常见一些的。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table144"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> 9 6 5 4 3<br><img src="h.gif" width="13" height="11"> K 6 5 3<br><img src="d.gif" width="13" height="11"> 7<br><img src="c.gif" width="13" height="11"> K Q 6</font><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">双方有局&nbsp; 西发牌</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">西</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">北</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">东</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">南</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">1<img src="d.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">1<img src="h.gif" width="13" height="11"></font></tr><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">3<img src="c.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">4<img src="h.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="4" rowSpan="2"><p style="line-height: 150%" align="left"></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A K 2<br><img src="h.gif" width="13" height="11"> J 10 9 8 4 2<br><img src="d.gif" width="13" height="11"> 10 5 4<br><img src="c.gif" width="13" height="11"> 7</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="s.gif" width="13" height="11">8，明手牌摊出后你发现你们叫成了一个有点过分乐观的成局定约。东<img src="s.gif" width="13" height="11">10，你用<img src="s.gif" width="13" height="11">A得进第一墩<img src="s.gif" width="13" height="11">。你计划怎样打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">这里每个花色中均有一个可能的输张，如果<img src="s.gif" width="13" height="11">是 4—1 分配，则形势对你已经毫无希望。如果<img src="s.gif" width="13" height="11">是
-3—2 分配，你还有机会能把<img src="s.gif" width="13" height="11">输张用明手的一个<img src="c.gif" width="13" height="11">赢张来垫掉。现在第二墩就打<img src="c.gif" width="13" height="11">是有点诱人的，但这个打法只有在西放掉这墩<img src="c.gif" width="13" height="11">的情况下才能成功。而更可能的是西多半会用<img src="c.gif" width="13" height="11">A得进，并打出第二轮<img src="s.gif" width="13" height="11">，从而使你没有快速进张能够进入明手，并用<img src="c.gif" width="13" height="11">来垫牌。而在你能够用<img src="c.gif" width="13" height="11">垫牌之前，东将立即得进你打出的<img src="d.gif" width="13" height="11">，并兑现一墩<img src="s.gif" width="13" height="11">而使你宕
-1。</font></p><p style="line-height: 150%" align="left"><font size="2">如果你打算在这副牌上避免丢失 1 墩，你就必须首先设法切断对方二人之间的联通。东可能在<img src="h.gif" width="13" height="11">和<img src="c.gif" width="13" height="11">中没有进张，但是他在<img src="d.gif" width="13" height="11">中肯定有一个进张。因此在第二墩牌时，你应当由暗手出一<img src="d.gif" width="13" height="11">。</font></p><p style="line-height: 150%" align="left"><font size="2">如果对方继续回出<img src="d.gif" width="13" height="11">，你就明手将吃，接着由明手出<img src="c.gif" width="13" height="11">K。而如果对方回出<img src="s.gif" width="13" height="11">，你就用<img src="s.gif" width="13" height="11">K得进，并由暗手出一将牌。假设正如你所希望的那样，<img src="c.gif" width="13" height="11">A和<img src="h.gif" width="13" height="11">A都在西的手中，东就无法再得牌进手，而你暗手的<img src="s.gif" width="13" height="11">输张最终就能在明手的<img src="c.gif" width="13" height="11">赢张上垫掉。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table145"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A 8 5<br><img src="h.gif" width="13" height="11"> A K 6 4<br><img src="d.gif" width="13" height="11"> 9 4<br><img src="c.gif" width="13" height="11"> A 10 6 2</font><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">双方无局&nbsp; 东发牌</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">西</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">北</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">东</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">南</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><td width="16%"><p style="line-height: 150%" align="left"><td width="16%"><p style="line-height: 150%" align="left"><font size="2">1<img src="h.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">1<img src="s.gif" width="13" height="11"></font></tr><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">4<img src="s.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="4" rowSpan="2"><p style="line-height: 150%" align="left"></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> Q 10 9 6 3<br><img src="h.gif" width="13" height="11"> 7 3<br><img src="d.gif" width="13" height="11"> K Q J<br><img src="c.gif" width="13" height="11"> Q 8 4</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="h.gif" width="13" height="11">J给你明手<img src="h.gif" width="13" height="11">A得进。在你兑现<img src="s.gif" width="13" height="11">A时，东掉出<img src="s.gif" width="13" height="11">K。你计划怎样打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">从东的开叫看，<img src="c.gif" width="13" height="11">K标明在东的手中，所以你的失墩看来只有 1 墩<img src="s.gif" width="13" height="11">、1 墩<img src="d.gif" width="13" height="11">和
-1 墩<img src="c.gif" width="13" height="11">。但是，为了做出你的赢墩，你必须丢失几次出牌权，这样对方就有可能多次回出<img src="h.gif" width="13" height="11">，使你将牌遭受严重消耗的危险。</font></p><p style="line-height: 150%" align="left"><font size="2">假设你马上送一<img src="s.gif" width="13" height="11">给西的<img src="s.gif" width="13" height="11">J。你可以得进西回出的<img src="h.gif" width="13" height="11">，叫完将牌，再出<img src="d.gif" width="13" height="11">K。但是东在用<img src="d.gif" width="13" height="11">A得进后，就会回出一<img src="h.gif" width="13" height="11">迫使你用最后一张将牌将吃。这样你就根本无法能够得到
-2 墩<img src="c.gif" width="13" height="11">来完成定约。</font></p><p style="line-height: 150%" align="left"><font size="2">显然你必须更好地在时机上对防守方的几个进张加以控制，亦即你必须做到要在西手中已无<img src="h.gif" width="13" height="11">可以回出的时候，才送给他得进<img src="s.gif" width="13" height="11">J这墩牌。因此，第三墩牌时你的正确行动是攻击<img src="d.gif" width="13" height="11">，并逼出<img src="d.gif" width="13" height="11">A。然后由明手得进对方回出的<img src="h.gif" width="13" height="11">，接着由明手出一<img src="c.gif" width="13" height="11">给暗手的<img src="c.gif" width="13" height="11">Q。此时东最好的对策，也只不过是立即用<img src="c.gif" width="13" height="11">K得进，并回出一<img src="h.gif" width="13" height="11">，这时你可以用<img src="s.gif" width="13" height="11">9将吃以进行反攻。不管西是否用将牌超吃，你都可以毫无困难地做成定约。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table146"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A K J 10 3<br><img src="h.gif" width="13" height="11"> A K 9 5 3<br><img src="d.gif" width="13" height="11"> 2<br><img src="c.gif" width="13" height="11"> K 4</font><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">双方无局&nbsp; 西发牌</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">西</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">北</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">东</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">南</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">1<img src="d.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">×</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">3<img src="d.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">×</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">3<img src="s.gif" width="13" height="11"></font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">4<img src="s.gif" width="13" height="11"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td vAlign="top" width="64%" colSpan="4" rowSpan="2"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> 9 7 5 2<br><img src="h.gif" width="13" height="11"> 7 4<br><img src="d.gif" width="13" height="11"> 10 9 6<br><img src="c.gif" width="13" height="11"> J 5 3 2</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">拿坏牌的牌手，有时候也是能得到补偿的。西首攻<img src="h.gif" width="13" height="11">10，明手<img src="h.gif" width="13" height="11">A得进，东跟<img src="h.gif" width="13" height="11">6。在你明手兑现<img src="s.gif" width="13" height="11">A时，东跟<img src="s.gif" width="13" height="11">6，西跟<img src="s.gif" width="13" height="11">4。你计划怎样往下打牌？</font></p><p style="line-height: 150%" align="left"><font size="2"> <img src="c.gif" width="13" height="11">A多半处于对你有利的位置，所以这里的问题，就在于把两个高级花色的输墩限制为 1 墩。只要<img src="h.gif" width="13" height="11">的分配不比
-4—2 更坏，就应该能够达到这个目的。</font></p><p style="line-height: 150%" align="left"><font size="2">但是此刻就兑现<img src="s.gif" width="13" height="11">K，并不安全。如果东有 4 张<img src="h.gif" width="13" height="11">，则西多半会持有 3 张<img src="s.gif" width="13" height="11">，同时他绝不会在你将吃第三轮<img src="h.gif" width="13" height="11">时用将牌超吃来给你帮忙。相反，他将随便垫一张牌，这样就使得你被困在暗手，无法快速进入明手。之后不管你暗手出<img src="c.gif" width="13" height="11">或是出<img src="d.gif" width="13" height="11">，西都会立即得进，接着兑现<img src="s.gif" width="13" height="11">Q，把你暗手最后的一张叫牌叫掉，结果使得你在四个花色中至少都各有一个输墩。</font></p><p style="line-height: 150%" align="left"><font size="2">那么你应该在第三墩牌时兑现<img src="h.gif" width="13" height="11">K，并接着打第三轮<img src="h.gif" width="13" height="11">将吃吗？这个打法并不更好。西可能将吃，并打一<img src="d.gif" width="13" height="11">给他同伴东得进，接着再将牌超吃一次<img src="h.gif" width="13" height="11">，而使你宕
-1。</font></p><p style="line-height: 150%" align="left"><font size="2">因此你必须首先出一<img src="d.gif" width="13" height="11">，以便切断对方两人之间的联通。这样，你将吃<img src="h.gif" width="13" height="11">并且最多只遭受一次将牌超吃的道路就扫清了。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table147"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A K 8 2<br><img src="h.gif" width="13" height="11"> J 9 8 5 4<br><img src="d.gif" width="13" height="11"> A K<br><img src="c.gif" width="13" height="11"> 10 3</font><td width="64%" colSpan="2"><p style="line-height: 150%" align="left"><font size="2">东西有局&nbsp; 南发牌</font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">南</font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">北</font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">3<img src="c.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">3<img src="h.gif" width="13" height="11"></font></tr><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">4<img src="c.gif" width="13" height="11"></font><td width="32%"><p style="line-height: 150%" align="left"><font size="2">5<img src="c.gif" width="13" height="11"></font></tr><tr><td width="32%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="32%"><p style="line-height: 150%" align="left"></tr><tr><td width="64%" colSpan="2" rowSpan="2"><p style="line-height: 150%" align="left"></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> 7 3<br><img src="h.gif" width="13" height="11"> 3<br><img src="d.gif" width="13" height="11"> 8 6 4<br><img src="c.gif" width="13" height="11"> A Q J 8 7 5 2</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="s.gif" width="13" height="11">J明手的<img src="s.gif" width="13" height="11">A得进。你计划怎样打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">如果将牌不比 3—1 更坏，前景是很好的。将牌的一飞有 50% 的成功机会。但是由明手将吃暗手的一个<img src="d.gif" width="13" height="11">输张，有更大的成功机会。直接了当的打法是先兑现<img src="d.gif" width="13" height="11">A和
-K，再由明手出<img src="c.gif" width="13" height="11">给暗手的<img src="c.gif" width="13" height="11">A，接着由明手<img src="c.gif" width="13" height="11">10将吃第三轮<img src="d.gif" width="13" height="11">。然而这个打法将出现不易回入暗手的困难。如果你打算将吃第三轮<img src="s.gif" width="13" height="11">回入暗手，这个办法过于冒险，因此这时你只送掉一墩<img src="h.gif" width="13" height="11">。</font></p><p style="line-height: 150%" align="left"><font size="2">在此刻送一墩<img src="h.gif" width="13" height="11">给防守方，本身就是危险的事情。西可能只有 3 张<img src="d.gif" width="13" height="11">，但却有 K9X
-三张<img src="c.gif" width="13" height="11">，如果真是这样，则东在得进这墩<img src="h.gif" width="13" height="11">之后再回出一<img src="d.gif" width="13" height="11">，就可为防守方升级出来第二个将牌赢墩。</font></p><p style="line-height: 150%" align="left"><font size="2">只要略为深入加以思考，就能很容易地避免上述危险。正确的打法是在兑现<img src="d.gif" width="13" height="11">A和 K 之后，在第 4 墩牌时就送掉<img src="h.gif" width="13" height="11">。在这个较早的时刻，对方较少可能能够对你作出什么破坏性的攻击。你可以用<img src="c.gif" width="13" height="11">A得进对方回出的将牌，由明手将吃<img src="d.gif" width="13" height="11">，并兑现掉明手的<img src="s.gif" width="13" height="11">K作为一个额外的预防措施。接着将吃<img src="h.gif" width="13" height="11">回入暗手，由暗手出<img src="c.gif" width="13" height="11">Q逼出<img src="c.gif" width="13" height="11">K。由于这里你有一个畅通无阻的通道可以回入暗手，所以防守方将无法能够升级出第二个将牌赢墩。</font></p><blockquote><blockquote><hr align="left"></blockquote></blockquote><div align="center"><table width="42%" id="table148"><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> 9 6 3<br><img src="h.gif" width="13" height="11"> A 9 6 5<br><img src="d.gif" width="13" height="11"> 7 6 4<br><img src="c.gif" width="13" height="11"> K 9 3</font><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">双方无局&nbsp; 西发牌</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">西</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">北</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">东</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">南</font></tr><tr><td width="16%"><p style="line-height: 150%" align="left"><font size="2">2<img src="h.gif" width="13" height="11"></font><sup><font size="2">*</font></sup><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">2NT</font></tr><tr><td width="36%" rowSpan="3"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">3NT</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font><td width="16%"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td width="64%" colSpan="4"><p style="line-height: 150%" align="left"><font size="2">—</font></tr><tr><td vAlign="top" width="64%" colSpan="4" rowSpan="2"><p style="line-height: 150%" align="left"><font size="2">* 弱 2 副开叫，6—10 大牌点。</font></tr><tr><td width="36%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> Q 8 2<br><img src="h.gif" width="13" height="11"> Q 4 3<br><img src="d.gif" width="13" height="11"> A K J 10 9<br><img src="c.gif" width="13" height="11"> A 4</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">西首攻<img src="c.gif" width="13" height="11">10。你让西赢得这墩<img src="c.gif" width="13" height="11">，接着西再出<img src="c.gif" width="13" height="11">7给你暗手的<img src="c.gif" width="13" height="11">A，东先后很出<img src="c.gif" width="13" height="11">8和
-6 而完成回声信号。你兑现<img src="d.gif" width="13" height="11">A和 K，东在第二轮<img src="d.gif" width="13" height="11">上掉出<img src="d.gif" width="13" height="11">Q，这使你得以松一口气。你计划怎样往下打牌？</font></p><p style="line-height: 150%" align="left"><font size="2">西的弱二副开叫标明其余 6 张<img src="h.gif" width="13" height="11">全在西的手中。并且你已知道他持有 3 张<img src="d.gif" width="13" height="11">和 2
-张<img src="c.gif" width="13" height="11">，因此他必然持有 2 张<img src="s.gif" width="13" height="11">，且其中有一个顶张大牌，这样才符合他开叫所应具有的牌点。显然，运用投入法，是得到第
-9 墩牌的最好办法。你可能打算先再兑现一墩<img src="d.gif" width="13" height="11">，然后由暗手出<img src="h.gif" width="13" height="11">3，贮备在西打<img src="h.gif" width="13" height="11">10时明手就放掉。这样西就只得被迫在<img src="h.gif" width="13" height="11">中或在<img src="s.gif" width="13" height="11">中送给你第
-9 墩牌。</font></p><p style="line-height: 150%" align="left"><font size="2">但西并不一定会与你的这个计划进行合作。西有可能在你的<img src="h.gif" width="13" height="11">3上跟<img src="h.gif" width="13" height="11">2，迫使你明手得进，这样就可以把你击败，因为这时你将永远无法回入暗手来兑现剩余的
-2 墩<img src="d.gif" width="13" height="11">。</font></p><p style="line-height: 150%" align="left"><font size="2">你必须安排别的方式来实现这个投入法，你必须希望西的<img src="s.gif" width="13" height="11">是 AX 双张，或者是 KJ 双张（译注：KX
-双张也可）。无论是这二者中的哪一种情况，东在<img src="s.gif" width="13" height="11">花色中都最多只有一次进张，于是你就可以设法切断东西之间的联通。正确的打法，是在第
-5 墩牌时由暗手出一小<img src="s.gif" width="13" height="11">。</font></p><p style="line-height: 150%" align="left"><font size="2">假若东得进这墩<img src="s.gif" width="13" height="11">，则不管在第三轮<img src="c.gif" width="13" height="11">上西是否垫掉<img src="s.gif" width="13" height="11">A（或<img src="s.gif" width="13" height="11">K）（译注：东这时不能回出<img src="s.gif" width="13" height="11">，只能回出<img src="c.gif" width="13" height="11">），他最后都要落入<img src="h.gif" width="13" height="11">的残局陷阱。要想避免落入残局陷阱，西可以在第一轮<img src="s.gif" width="13" height="11">时用<img src="s.gif" width="13" height="11">A（或<img src="s.gif" width="13" height="11">K）得进，然后打出他的第三张<img src="d.gif" width="13" height="11">脱手。但是，这样你就能够把暗手的<img src="s.gif" width="13" height="11">Q打好成为第
-9 墩牌。</font></p><p style="line-height: 150%" align="left"><font size="2">全副牌如下：</font></p><div align="center"><table width="42%" id="table149"><tr><td width="35%"><p style="line-height: 150%" align="left"><td width="65%" colSpan="2"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> 9 6 3<br><img src="h.gif" width="13" height="11"> A 9 6 5<br><img src="d.gif" width="13" height="11"> 7 6 4<br><img src="c.gif" width="13" height="11"> K 9 3</font></tr><tr><td width="35%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> A 7<br><img src="h.gif" width="13" height="11"> K J 10 8 7 2<br><img src="d.gif" width="13" height="11"> 8 5 2<br><img src="c.gif" width="13" height="11"> 10 7</font><td width="30%"><p style="line-height: 150%" align="left"><font size="2"><img src="table.gif" width="50" height="50"></font><td width="35%"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> K J 10 5 4<br><img src="h.gif" width="13" height="11"> —<br><img src="d.gif" width="13" height="11"> Q 3<br><img src="c.gif" width="13" height="11"> Q J 8 6 5 2</font></tr><tr><td width="35%"><p style="line-height: 150%" align="left"><td width="65%" colSpan="2"><p style="line-height: 150%" align="left"><font size="2"><img src="s.gif" width="13" height="11"> Q 8 2<br><img src="h.gif" width="13" height="11"> Q 4 3<br><img src="d.gif" width="13" height="11"> A K J 10 9<br><img src="c.gif" width="13" height="11"> A 4</font></tr></table></div><p style="line-height: 150%" align="left"><font size="2">注意，如果你立刻拿完暗手的全部<img src="d.gif" width="13" height="11">赢墩，这个定约就无法做成。因为这样就会使明手难以垫牌，以致明手的牌遭受严重削弱而失败。<br></font></p><p style="line-height: 150%" align="right"><img border="0" src="../../../images/zxdp_50.gif" width="50" height="50"></div></blockquote></TR></TABLE></div><TABLE width=643 align=center border=0 id="table129" height="6"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><p style="line-height: 1px">　</TR></TABLE></DIV></TR></TABLE></DIV></TR></TABLE><TABLE width=745 align=center border=0 id="table130" height="9"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><hr width="960" size="1" color="#CCCCCC"></TR></TABLE><TABLE width=966 align=center border=0 id="table133" height="37"><TBODY><TR><TD style="font-size: 13px; line-height: 17px"><p align="center" style="line-height: 150%"><font color="#CCCCCC" face="Arial" style="font-size: 9pt">重要说明：本站资料大多从网上搜集得来，旨在为桥牌爱好者们提供学习交流的方便，部分内容经过重新编排整理，若有侵权，请及时告知，!<br>13P对很多桥友来说都是一个值得尊敬和留念的地方，前辈的心血不应消失掉。谢谢百度贴吧的贵州桥友xy_alpha提供了保存的数据。<br>东莞桥牌网于2013年1月15日恢复了13P在线浏览数据，并维持原创造者13P及宰相肚皮前辈的整体架构不再改动和更新!<br> 粤ICP备08117329号-8ICP备05073487号</font><font size="2" color="#CCCCCC" face="Arial">&nbsp; </font><font color="#CCCCCC" face="Arial" size="3">&copy;</font><font size="2" color="#CCCCCC" face="Arial">2008 <a href="../../../../../index.html" style="text-decoration: none"><font color="#CCCCCC">www.dgbrg.com/13P/</font></a>&nbsp;&nbsp;
-<a href="http://www.dgbrg.com" style="text-decoration: none"><font color="#CCCCCC">东莞桥牌网</font></a>&nbsp;&nbsp; Since
-2000-09-01<br><p align="center"> </font></TR></TABLE>
+<html>
+
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>桥牌逻辑</title>
+  <base target="_self">
+  <style>
+    <!--
+    -->
+  </style>
+
+<body onpaste="return false" oncontextmenu="return false" onbeforecopy="return false" oncopy="return false;"
+  oncut="return false;" onselectstart="return false" background="../../../images/bj2.gif"
+  style="text-align: center; background-attachment:fixed" topmargin="0">
+  <TABLE width=971 align=center border=0 id="table122">
+    <TBODY>
+      <TR>
+        <TD style="font-size: 13px; line-height: 17px">
+          <DIV align=center>
+            <TABLE id=table123
+              style="BORDER-RIGHT: #282828 2px dashed; BORDER-TOP: #282828 2px dashed; BORDER-LEFT: #282828 2px dashed; BORDER-BOTTOM: #282828 2px dashed"
+              height=136 cellSpacing=1 borderColorDark=#282828 width=962 borderColorLight=#363636
+              background="../../../images/bj3.gif" border=2>
+              <TBODY>
+                <TR>
+                  <TD width=952 height=130 style="font-size: 9pt">
+                    <DIV align=center>
+                      <TABLE width=643 align=center border=0 id="table127" height="6">
+                        <TBODY>
+                          <TR>
+                            <TD style="font-size: 13px; line-height: 17px">
+                              <p style="line-height: 1px">　
+                          </TR>
+                      </TABLE>
+                      <div align="center">
+                        <TABLE cellSpacing=0 cellPadding=0 width=938 bgColor=#ffffff border=0 id="table128"
+                          background="../../../images/bg_01.jpg">
+                          <TBODY>
+                            <TR>
+                              <TD style="font-size: 13px; line-height: 17px; font-family:宋体">
+                                <blockquote>
+                                  <div align="center">
+                                    <div align="center">
+                                      <TABLE width=856 border=0 id="table134" height="6">
+                                        <TBODY>
+                                          <TR>
+                                            <TD style="font-size: 13px; line-height: 17px">
+                                              <p style="line-height: 100%">
+                                                <font color="#800000"><b>
+                                                    <font size="3"><br>桥牌逻辑</font>
+                                                  </b>
+                                                  <font size="2">&nbsp;&nbsp; H.W.Kelsey 凯尔西 著&nbsp;&nbsp; 周家骝
+                                                    译<br>&nbsp; </font>
+                                                </font>
+                                            <TD style="font-size: 13px; line-height: 17px" width="145">
+                                              <p style="line-height: 100%" align="right">
+                                                <font color="#800000"><img border="0"
+                                                    src="../../../images/a_rend_dark.gif" width="13" height="11"></font>
+                                                <font color="#FFFFFF">.</font><a href="../04-gfjq-00.htm"
+                                                  style="text-decoration: none">
+                                                  <font color="#800000">返回目录</font>
+                                                </a>
+                                          </TR>
+                                      </TABLE>
+                                      <div align="center">
+                                        <TABLE width=856 border=0 id="table135" height="6">
+                                          <TBODY>
+                                            <TR>
+                                              <TD style="font-size: 13px; line-height: 17px"><img border="0"
+                                                  src="../../../images/jsmenu_a.gif" width="10" height="10"><span
+                                                  style="font-weight: 400">
+                                                  <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ0.htm"
+                                                      style="text-decoration: none" href="04-gfjq-034-0a.htm">著者序</a>
+                                                  </font>
+                                                </span>
+                                              <TD style="font-size: 13px; line-height: 17px" width="140"><img border="0"
+                                                  src="../../../images/jsmenu_a.gif" width="10" height="10"><span
+                                                  style="font-weight: 400">
+                                                  <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ2.htm"
+                                                      href="04-gfjq-034-02.htm"
+                                                      style="text-decoration: none">2、从计算中来</a></font>
+                                                </span>
+                                              <TD style="font-size: 13px; line-height: 17px" width="140"><img border="0"
+                                                  src="../../../images/jsmenu_a.gif" width="10" height="10"><span
+                                                  style="font-weight: 400">
+                                                  <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ4.htm"
+                                                      href="04-gfjq-034-04.htm"
+                                                      style="text-decoration: none">4、打牌中的启示</a></font>
+                                                </span>
+                                              <TD style="font-size: 13px; line-height: 17px" width="160"><img border="0"
+                                                  src="../../../images/jsmenu_a.gif" width="10" height="10"><span
+                                                  style="font-weight: 400">
+                                                  <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ6.htm"
+                                                      href="04-gfjq-034-06.htm"
+                                                      style="text-decoration: none">6、给指定的对手出牌</a></font>
+                                                </span>
+                                              <TD style="font-size: 13px; line-height: 17px" width="145"><img border="0"
+                                                  src="../../../images/jsmenu_a.gif" width="10" height="10"><span
+                                                  style="font-weight: 400">
+                                                  <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ8.htm"
+                                                      href="04-gfjq-034-08.htm"
+                                                      style="text-decoration: none">8、攻掉对方进张</a></font>
+                                                </span>
+                                              <TD style="font-size: 13px; line-height: 17px" width="120" align="right">
+                                                <p style="line-height: 100%"><img border="0"
+                                                    src="../../../images/jsmenu_a.gif" width="10" height="10"><span
+                                                    style="font-weight: 400">
+                                                    <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ10.htm"
+                                                        href="04-gfjq-034-10.htm"
+                                                        style="text-decoration: none">10、打最好的概率</a></font>
+                                                  </span>
+                                            </TR>
+                                        </TABLE>
+                                        <div align="center">
+                                          <TABLE width=856 border=0 id="table137" height="6">
+                                            <TBODY>
+                                              <TR>
+                                                <TD style="font-size: 13px; line-height: 17px"><img border="0"
+                                                    src="../../../images/jsmenu_a.gif" width="10" height="10"><span
+                                                    style="font-weight: 400">
+                                                    <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ1.htm"
+                                                        href="04-gfjq-034-01.htm"
+                                                        style="text-decoration: none">1、奇妙的数字</a></font>
+                                                  </span>
+                                                <TD style="font-size: 13px; line-height: 17px" width="140"><img
+                                                    border="0" src="../../../images/jsmenu_a.gif" width="10"
+                                                    height="10"><span style="font-weight: 400">
+                                                    <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ3.htm"
+                                                        href="04-gfjq-034-03.htm"
+                                                        style="text-decoration: none">3、叫牌中的回声</a></font>
+                                                  </span>
+                                                <TD style="font-size: 13px; line-height: 17px" width="140"><img
+                                                    border="0" src="../../../images/jsmenu_a.gif" width="10"
+                                                    height="10"><span style="font-weight: 400">
+                                                    <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ5.htm"
+                                                        href="04-gfjq-034-05.htm"
+                                                        style="text-decoration: none">5、保留一个选择</a></font>
+                                                  </span>
+                                                <TD style="font-size: 13px; line-height: 17px" width="160"><img
+                                                    border="0" src="../../../images/jsmenu_a.gif" width="10"
+                                                    height="10"><span style="font-weight: 400">
+                                                    <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ7.htm"
+                                                        href="04-gfjq-034-07.htm"
+                                                        style="text-decoration: none">7、做出一个选择</a></font>
+                                                  </span>
+                                                <TD style="font-size: 13px; line-height: 17px" width="145"><img
+                                                    border="0" src="../../../images/jsmenu_a.gif" width="10"
+                                                    height="10"><span style="font-weight: 400">
+                                                    <font size="2"><a tppabs="http://www.ourbridge.net/DEC/LJ/LJ9.htm"
+                                                        href="04-gfjq-034-09.htm"
+                                                        style="text-decoration: none">9、打掉对方脱手张</a></font>
+                                                  </span>
+                                                <TD style="font-size: 13px; line-height: 17px" width="120"
+                                                  align="right">
+                                                  <p style="line-height: 100%"><img border="0"
+                                                      src="../../../images/jsmenu_a.gif" width="10" height="10"><span
+                                                      style="font-weight: 400">
+                                                      <font size="2"><a
+                                                          tppabs="http://www.ourbridge.net/DEC/LJ/LJ11.htm"
+                                                          href="04-gfjq-034-11.htm"
+                                                          style="text-decoration: none">11、全在恰好时机</a></font>
+                                                    </span>
+                                              </TR>
+                                          </TABLE>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div align="center">
+                                      <TABLE width=856 border=0 id="table136" height="6">
+                                        <TBODY>
+                                          <TR>
+                                            <TD style="font-size: 13px; line-height: 17px">
+                                              <hr color="#800000" size="1">
+                                          </TR>
+                                      </TABLE>
+                                    </div>
+                                    <h3 style="line-height: 150%">
+                                      <font size="3">第8章&nbsp; 攻掉对方进张</font>
+                                    </h3>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">
+                                        <br>在你学会了照顾和处理联手牌中的进张问题时，你还只不过在解决联通问题的道路上行进了一段旅程。在很大一类牌例中，你是否能够成功，并不取决于你能保留住自己的进张，而是取决于你能否阻止防守方两人发挥他们的进张的最大作用。凡是那些不能允许你采取叫将牌并树立你赢墩这种常规打法的牌例，都属于这类牌例。在这类牌例中，有某些因素会引起你的警惕，使你意识到如果你对防守方的活动能力不加注意，防守方就会想出办法把你的定约击败。
+                                      </font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">
+                                        意识到了有危险，还只不过进行了一半的战斗。如果你打算采取有效的对抗措施，你就必须首先弄清楚危险之所在。这里的威胁可能是一个对手会进行将吃，或者是对方有可能会获得一个将牌升级赢墩，这时可以采用把一个花色的输张转换成另一个花色的输张这种对策，而将威胁解除。此外，有时候你会受到燃眉之急的强迫将吃打法的威胁，这时你只有依靠以正确次序攻掉对方的进张这种办法，才能克服这种威胁。一个危险的防守人，常常可以在一个早期阶段，亦即在他的赢张还未做好的时候，因为他的进张被你攻掉，而变成为一个毫无危险的防守人。在另外某些牌例中，则有可能需要安排好某一特定花色的联通，以便为投入打法作好准备。
+                                      </font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">
+                                        庄家享有一个有利之点，就是他对于防守方的进张在运用时机上，握有一定的控制力。使防守方两人之间不能互相联通的一个最简单方便的方法，就是缓拿打法（hold-up
+                                        play）。庄家一直让到一个防守人的这个花色的牌张完全打完的时候，才用他这个花色的止张拿进。用这个办法，庄家就可以解除掉对方树立长套所产生的威胁。缓拿打法对于大多数牌手当然都是很熟悉的，因此在本章中，将重点讨论攻掉进张的其他一些办法。
+                                      </font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">现在你可以试一试下面的4<img src="s.gif" width="13" height="11">定约，看看应该如何打法？
+                                      </font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table138">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A 7 4<br><img
+                                                  src="h.gif" width="13" height="11"> K J 6 3<br><img src="d.gif"
+                                                  width="13" height="11"> K 10 4<br><img src="c.gif" width="13"
+                                                  height="11"> K 10 7</font>
+                                          <td width="64%" colSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南北有局&nbsp; 南发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="s.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3NT</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td vAlign="top" width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="s.gif" width="13" height="11"></font>
+                                          <td vAlign="top" width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="2" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> Q J 9 8 5
+                                                2<br><img src="h.gif" width="13" height="11"> 7<br><img src="d.gif"
+                                                  width="13" height="11"> 3<br><img src="c.gif" width="13" height="11">
+                                                A Q J 6 4</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="h.gif" width="13" height="11">10，你明手盖<img src="h.gif"
+                                          width="13" height="11">J，东用<img src="h.gif" width="13" height="11">Q得。东换出<img
+                                          src="c.gif" width="13" height="11">8。你计划如何打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">从表面上看，这里最多只有 3 个可能的输张，即 1 墩<img src="h.gif" width="13"
+                                          height="11">、1 墩<img src="d.gif" width="13" height="11">和 1 墩<img src="s.gif"
+                                          width="13" height="11">。但是，对于东回出的这张<img src="c.gif" width="13"
+                                          height="11">，值得加以注意。看来东是准备将吃一次<img src="c.gif" width="13"
+                                          height="11">，而危险可能是他持有<img src="s.gif" width="13"
+                                          height="11">KXX三张将牌。如果真是这样，则连打<img src="s.gif" width="13"
+                                          height="11">A和另一小<img src="s.gif" width="13"
+                                          height="11">的打法，就不是一个好的办法。因为东在用<img src="s.gif" width="13"
+                                          height="11">K得进第二轮<img src="s.gif" width="13" height="11">时，可能会回出<img
+                                          src="d.gif" width="13" height="11">给他同伴的<img src="d.gif" width="13"
+                                          height="11">A，从而得到一次<img src="c.gif" width="13" height="11">将吃，成为宕墩。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">这个问题的解决办法，只要你想一想，其实是很简单的，就是把你的一个<img src="d.gif" width="13"
+                                          height="11">输墩转换成一个<img src="h.gif" width="13"
+                                          height="11">输墩，不让西得牌进手就行了。所以你应当由明手得进这墩<img src="c.gif" width="13"
+                                          height="11">，接着由明手出<img src="h.gif" width="13" height="11">K，在东盖上<img
+                                          src="h.gif" width="13" height="11">A时，你暗手垫掉<img src="d.gif" width="13"
+                                          height="11">。将吃东回出的红牌，然后连打<img src="s.gif" width="13" height="11">A及另一<img
+                                          src="s.gif" width="13" height="11">，这样就可以使防守方无法将吃<img src="c.gif" width="13"
+                                          height="11">。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">这个打法是剪刀妙招的一个例子，之所以称为剪刀妙招，就是因为它的作用就如剪刀一样把对方的联通剪断。实际上这是一种输张垫输张（loser
+                                        on
+                                        loser）打法，目的在于把出牌权让给一个安全的对手。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table139">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> 10 9 7 5 4<br><img
+                                                  src="h.gif" width="13" height="11"> 6<br><img src="d.gif" width="13"
+                                                  height="11"> A K Q 8<br><img src="c.gif" width="13" height="11"> K Q 3
+                                              </font>
+                                          <td width="64%" colSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">双方有局&nbsp; 南发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="s.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="d.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="h.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="s.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="s.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="2" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A K J 6 2<br><img
+                                                  src="h.gif" width="13" height="11"> Q J 9 7<br><img src="d.gif"
+                                                  width="13" height="11"> 10 9 5<br><img src="c.gif" width="13"
+                                                  height="11"> 2</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="c.gif" width="13" height="11">J，明手盖<img src="c.gif"
+                                          width="13" height="11">K，东用<img src="c.gif" width="13" height="11">A赢进。东回出<img
+                                          src="c.gif" width="13" height="11">，你暗手垫一<img src="h.gif" width="13"
+                                          height="11">，西跟<img src="c.gif" width="13" height="11">10，明手<img src="c.gif"
+                                          width="13" height="11">Q得进。在你由明手打一将牌给暗手的<img src="s.gif" width="13"
+                                          height="11">A时，西垫<img src="d.gif" width="13" height="11">2。你计划怎样打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">这副牌看来一般应能做成 11 墩。等明手一得牌进手，就可由明手出将牌进行标明的飞，捉住东的<img src="s.gif"
+                                          width="13" height="11">Q，从而只失 1 墩<img src="c.gif" width="13" height="11">和
+                                        1 墩<img src="h.gif" width="13"
+                                          height="11">。然而在你这个定约看起来特别容易的时候，你按照惯例问问自己会不会有什么意外情况发生，应当是很有好处的。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">答案就是东的<img src="d.gif" width="13" height="11">可能缺门。如果真是这样，则在第 4
+                                        墩牌时假若你由暗手出一<img src="d.gif" width="13" height="11">，东就会将吃，并回出<img src="h.gif"
+                                          width="13" height="11">让他同伴得进，东再将吃一次<img src="d.gif" width="13"
+                                          height="11">而将定约击败。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">这个牌例是桥牌桌上检验警觉性的一个很好的例子。虽然这里并没有任何理由足以怀疑<img src="d.gif" width="13"
+                                          height="11">花色作这样奇型的分配，但是做好准备以对付它，则是不需要你付出任何代价的。一墩<img src="h.gif" width="13"
+                                          height="11">迟早是要丢失的，而丢失这墩<img src="h.gif" width="13" height="11">的正确时机就是在打第
+                                        4 墩的时候。这时由暗手出一<img src="h.gif" width="13"
+                                          height="11">送给防守方，就可使得防守方两人之间无法联通，从而既可保证 10 墩牌，又可毫不降低打成 11
+                                        墩牌的机会。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table140">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> Q 10 8 4 3<br><img
+                                                  src="h.gif" width="13" height="11"> Q 7 5 2<br><img src="d.gif"
+                                                  width="13" height="11"> J 4<br><img src="c.gif" width="13"
+                                                  height="11"> 6 2</font>
+                                          <td width="64%" colSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">双方有局&nbsp; 南发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">2<img src="c.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">2<img src="d.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">2<img src="h.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="h.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">6<img src="h.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="2" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A<br><img
+                                                  src="h.gif" width="13" height="11"> A K J 10 8<br><img src="d.gif"
+                                                  width="13" height="11"> A K 6<br><img src="c.gif" width="13"
+                                                  height="11"> A 10 7 3</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="h.gif" width="13"
+                                          height="11">3，明手牌摊出之后，可以看出这个首攻看来是防守方的一个好的开端。你明手跟小，东垫<img src="d.gif"
+                                          width="13" height="11">2，你用<img src="h.gif" width="13"
+                                          height="11">8得进。你计划怎样往下打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">这里在副牌花色中一共只有 4 个顶张赢墩，并且又没有能够做出第 5 个赢墩的任何前景。因此你需要一共得到 8 墩将牌，也就是说剩下得
+                                        7
+                                        张将牌必须全部分开各自单独拿到才行。从理论上看，应该能够由明手将吃 2 次<img src="c.gif" width="13" height="11">和 1
+                                        次<img src="d.gif" width="13" height="11">，但实际上却有困难。如果你先送掉
+                                        1 墩<img src="c.gif" width="13" height="11">，准备以后进行交叉将吃，西多半会得进这墩<img src="c.gif"
+                                          width="13" height="11">，并回出第二轮将牌，这样你就少了 1 墩牌。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">在任何别的首攻情况下，这个6<img src="s.gif" width="13"
+                                          height="11">定约都是很容易打成的。这里没有什么办法，能够阻止防守人叫第二轮将牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">至少你已经知道，东是没有将牌可出的。如果在<img src="c.gif" width="13"
+                                          height="11">花色上你无法能够不让西进手，则在<img src="d.gif" width="13"
+                                          height="11">花色你可能有较好的运气。这里当然没有肯定成功的保证，然而你却有一个很好的机会值得试试，就是在第二墩牌时由暗手出小<img
+                                          src="d.gif" width="13" height="11">。如果东持<img src="d.gif" width="13"
+                                          height="11">Q，并且西至少有
+                                        3 张<img src="d.gif" width="13" height="11">时，你就能够做成定约。你在得进东回出的牌后，就兑现<img
+                                          src="d.gif" width="13" height="11">A和 K，垫掉明手一个<img src="c.gif" width="13"
+                                          height="11">输张，再兑现<img src="c.gif" width="13" height="11">A，然后把剩下的牌全部交叉将吃，从而得到
+                                        12 墩牌。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">下面一个牌例，情况比较复杂一些。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table141">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> 9<br><img
+                                                  src="h.gif" width="13" height="11"> 7 3<br><img src="d.gif" width="13"
+                                                  height="11"> 10 8 7 6 4 3 2<br><img src="c.gif" width="13"
+                                                  height="11"> Q 9 4</font>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东西有局&nbsp; 西发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">西</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="c.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="c.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="s.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">×</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> K Q J 6 5 4
+                                                2<br><img src="h.gif" width="13" height="11"> A K Q J<br><img
+                                                  src="d.gif" width="13" height="11"> 9<br><img src="c.gif" width="13"
+                                                  height="11"> 5</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="d.gif" width="13"
+                                          height="11">A，明手牌摊出后你感到略为高兴。在第一墩牌上东掉出<img src="d.gif" width="13"
+                                          height="11">K，西再出<img src="d.gif" width="13" height="11">5给东的<img src="d.gif"
+                                          width="13" height="11">J。你将吃之后怎样往下打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">这个定约并非已经完全绝望，你没有必要惋惜你没有更多的将牌中间张。由于西叫加倍，<img src="s.gif" width="13"
+                                          height="11">A多半在他的手中，所以你必须希望他没有
+                                        4 张将牌。但是，即使将牌是 3—2分配，形势仍旧十分危险，如果你此刻就打将牌，你能看到会出现什么情况吗？西将立即得进，并回出<img src="c.gif"
+                                          width="13" height="11">让同伴进手，由东再回出一<img src="d.gif" width="13"
+                                          height="11">，就能够为防守方升级出第二个将牌赢墩。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">在这个牌例的具体情况下，看来是无法能够不让东进手出牌的。然而东手中只剩下 1 张<img src="d.gif" width="13"
+                                          height="11">，如果你能设法进入明手，你就可以自己由明手出一<img src="d.gif" width="13"
+                                          height="11">，垫掉暗手的<img src="c.gif" width="13"
+                                          height="11">输张，从而实现一个剪刀妙招。这样既解除了<img src="d.gif" width="13"
+                                          height="11">花色上的险恶形势，又可以避免一个将牌升级的威胁。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">进入明手的一个明显的办法，就是希望<img src="h.gif" width="13" height="11">为 4—3
+                                        分配，并由明手将吃第三轮<img src="h.gif" width="13"
+                                          height="11">。但是，如果你对形势加以更深入一些的分析，你就会发现这个打牌路线，就象乘坐一艘漏气的橡皮舟横渡尼加拉瓜一样的危险。问题在于，如果东持有
+                                        4 张<img src="h.gif" width="13" height="11">，则他在得进<img src="d.gif" width="13"
+                                          height="11">赢墩时，仍会回出<img src="h.gif" width="13"
+                                          height="11">给他同伴将吃。再进一步看看，即使西持有
+                                        4 张<img src="h.gif" width="13" height="11">，也同样是危险的，因为你无法阻止西将吃他同伴的<img
+                                          src="d.gif" width="13" height="11">Q。然后西回出一<img src="h.gif" width="13"
+                                          height="11">，就可让东得以将吃而拿到宕墩。因此，看来不管<img src="h.gif" width="13" height="11">是怎样的
+                                        4—3 分配，明手将吃第三轮<img src="h.gif" width="13" height="11">这个打法都不是正确的。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">然而持有 4 张<img src="h.gif" width="13" height="11">的那个防守人，如果同时还拿着<img
+                                          src="s.gif" width="13" height="11">10，你就能够由明手将吃第 4 轮<img src="h.gif"
+                                          width="13" height="11">，而有可能获得成功。只要不出现将牌超吃，你就按预定计划由明手出<img src="d.gif"
+                                          width="13" height="11">，暗手垫掉<img src="c.gif" width="13"
+                                          height="11">输张。（译注：如果西持<img src="s.gif" width="13" height="11">10，东持<img
+                                          src="s.gif" width="13" height="11">AX，则东再用将牌<img src="s.gif" width="13"
+                                          height="11">A超吃第
+                                        4 轮<img src="h.gif" width="13" height="11">之后，先兑现<img src="c.gif" width="13"
+                                          height="11">A，再回出<img src="d.gif" width="13" height="11">就可使西的<img src="s.gif"
+                                          width="13" height="11">10升级为赢墩，而将定约击败一墩）。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">这是真正能有机会做成这个定约的唯一的打牌路线。这时你所希望的牌张的整个分配情况，如下面全副牌所示：</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">显然，这个打法有可能宕 2（译注：如果西持<img src="s.gif" width="13"
+                                          height="11">A873，东持单张<img src="s.gif" width="13" height="11">10，定约就将宕
+                                        2），但即使这样也值得冒险一试。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">让对方的一个进张失去作用的另一办法，在下面的一个牌例中加以说明。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table142">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> 5<br><img
+                                                  src="h.gif" width="13" height="11"> K 10 6 5 3<br><img src="d.gif"
+                                                  width="13" height="11"> K 7 6 2<br><img src="c.gif" width="13"
+                                                  height="11"> K J 2</font>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东西有局&nbsp; 北发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">西</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="s.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A Q J 8 7 4
+                                                2<br><img src="h.gif" width="13" height="11"> 7<br><img src="d.gif"
+                                                  width="13" height="11"> Q J<br><img src="c.gif" width="13"
+                                                  height="11"> Q 10 9</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">在你的4<img src="s.gif" width="13" height="11">关煞叫之后，别人都不叫牌，西首攻<img
+                                          src="h.gif" width="13" height="11">9。明手牌摊出后你甚为高兴，因为看到这个定约确有机会可以做成。你看到的机会在哪里？
+                                      </font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">你必须希望将牌的分配对你有利，这是当然的。由于在每个副牌花色中都有一个输张，所以你不允许再丢失 1
+                                        墩将牌，因而需要东的将牌是双张<img src="s.gif" width="13" height="11">K。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">由于首攻的这张<img src="d.gif" width="13" height="11">9表明西的<img
+                                          src="d.gif" width="13" height="11">是短牌，所以对于<img src="d.gif" width="13"
+                                          height="11">花色的形势需要加以考虑。如果这个<img src="d.gif" width="13"
+                                          height="11">9是单张，你将没有任何办法能够避免失败。如果西的<img src="d.gif" width="13"
+                                          height="11">是双张，情况又将如何呢？假如你明手跟小牌<img src="d.gif" width="13"
+                                          height="11">，则东肯定会暂时缓拿他的<img src="d.gif" width="13"
+                                          height="11">A，以便保持他和他同伴之间的联通。以后在你打<img src="c.gif" width="13"
+                                          height="11">意欲进入明手时，对方就会接连兑现他们的<img src="c.gif" width="13" height="11">A、<img
+                                          src="h.gif" width="13" height="11">A和<img src="d.gif" width="13"
+                                          height="11">A，接着东再回出一张<img src="d.gif" width="13"
+                                          height="11">，就可为他们防守方升级出来一个将牌赢张，成为宕墩。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">在<img src="d.gif" width="13" height="11">为 5—2
+                                        分配的情况下，你要能有机会做成定约，就必须第一墩牌由明手打<img src="d.gif" width="13" height="11">K。如果东除<img
+                                          src="d.gif" width="13" height="11">A外别无其他进张，你的这个打法就会给东造成一个无法解决的难题。假如东放掉他这墩<img
+                                          src="d.gif" width="13" height="11">，你就得以立即叫出将牌；而如果他用<img src="d.gif"
+                                          width="13" height="11">A得进，他就会失掉给同伴升级出来一个将牌赢墩的机会。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table143">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> K 6<br><img
+                                                  src="h.gif" width="13" height="11"> Q 8 4 3<br><img src="d.gif"
+                                                  width="13" height="11"> A J 9 4<br><img src="c.gif" width="13"
+                                                  height="11"> 10 6 2</font>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">比赛分制对式比赛</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">双方无局&nbsp; 东发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">西</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="h.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="s.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">2<img src="d.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">2<img src="s.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="c.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="d.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="s.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> Q J 10 9 4
+                                                2<br><img src="h.gif" width="13" height="11"> 9 6<br><img src="d.gif"
+                                                  width="13" height="11"> 6<br><img src="c.gif" width="13" height="11">
+                                                A J 9 5</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">×</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td vAlign="top" width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="c.gif" width="13" height="11">7，东出<img src="c.gif"
+                                          width="13" height="11">Q，你暗手用<img src="c.gif" width="13"
+                                          height="11">A得进。你由暗手出一<img src="s.gif" width="13" height="11">给明手的<img
+                                          src="s.gif" width="13" height="11">K，赢得了这墩牌。但在第二轮<img src="s.gif" width="13"
+                                          height="11">上东垫<img src="h.gif" width="13" height="11">7，西用<img src="s.gif"
+                                          width="13" height="11">A得进并回出<img src="h.gif" width="13"
+                                          height="11">2。你计划如何打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">虽然这个定约你无法做成，因为你必须丢失 1 墩<img src="s.gif" width="13" height="11">、2
+                                        墩<img src="h.gif" width="13" height="11">和 1 墩<img src="c.gif" width="13"
+                                          height="11">将吃。负
+                                        100 分应该是一个还可以的得分，因为这副牌对方能够做成3<img src="d.gif" width="13" height="11">而得到正 110
+                                        分。所以你应当尽一切可能避免宕 2 而失 300
+                                        分。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西换攻的这张<img src="h.gif" width="13"
+                                          height="11">2，你认为是一张什么样的牌？如果这是一个单张，你是没有什么可担忧的。这张<img src="h.gif" width="13"
+                                          height="11">肯定不会是从
+                                        3 张<img src="h.gif" width="13"
+                                          height="11">中攻出来的，否则对方的叫牌就没有意义（译注：根据东的叫牌情况看，东应该至少持有 5 张<img src="h.gif"
+                                          width="13" height="11">）。然而这里却有一个危险，就是西的<img src="h.gif" width="13"
+                                          height="11">2可能是从<img src="h.gif" width="13"
+                                          height="11">K2双张中攻出的。如果真是这样，则假若你明手跟小<img src="h.gif" width="13"
+                                          height="11">，东就可以用<img src="h.gif" width="13" height="11">10得进，接着兑现<img
+                                          src="c.gif" width="13" height="11">K，再出一<img src="c.gif" width="13"
+                                          height="11">给西将吃。于是东就会等着用<img src="h.gif" width="13" height="11">A把他同伴的<img
+                                          src="h.gif" width="13" height="11">K超得过来，然后又打一<img src="c.gif" width="13"
+                                          height="11">给西第二次将吃，从而使你宕
+                                        2。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">为了对付这个可能的情况，你必须在西的<img src="h.gif" width="13" height="11">2上盖打<img
+                                          src="h.gif" width="13" height="11">Q，以便把对方在<img src="h.gif" width="13"
+                                          height="11">花色上的联通切断。这样东在<img src="h.gif" width="13"
+                                          height="11">上就不可能再有第二个进张（译注：在假设西持<img src="h.gif" width="13"
+                                          height="11">K2的情况下可以成功，在其他情况下均将失败），从而得以限制防守方只能有一次<img src="c.gif" width="13"
+                                          height="11">将吃。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">用第二手高（second hand high）的办法来破坏对方的进张飞牌打法（entry
+                                        finesse），作为防守方的措施是更为常见一些的。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table144">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> 9 6 5 4 3<br><img
+                                                  src="h.gif" width="13" height="11"> K 6 5 3<br><img src="d.gif"
+                                                  width="13" height="11"> 7<br><img src="c.gif" width="13" height="11">
+                                                K Q 6</font>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">双方有局&nbsp; 西发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">西</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="d.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="h.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="c.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="h.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A K 2<br><img
+                                                  src="h.gif" width="13" height="11"> J 10 9 8 4 2<br><img src="d.gif"
+                                                  width="13" height="11"> 10 5 4<br><img src="c.gif" width="13"
+                                                  height="11"> 7</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="s.gif" width="13"
+                                          height="11">8，明手牌摊出后你发现你们叫成了一个有点过分乐观的成局定约。东<img src="s.gif" width="13"
+                                          height="11">10，你用<img src="s.gif" width="13" height="11">A得进第一墩<img
+                                          src="s.gif" width="13" height="11">。你计划怎样打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">这里每个花色中均有一个可能的输张，如果<img src="s.gif" width="13" height="11">是 4—1
+                                        分配，则形势对你已经毫无希望。如果<img src="s.gif" width="13" height="11">是
+                                        3—2 分配，你还有机会能把<img src="s.gif" width="13" height="11">输张用明手的一个<img src="c.gif"
+                                          width="13" height="11">赢张来垫掉。现在第二墩就打<img src="c.gif" width="13"
+                                          height="11">是有点诱人的，但这个打法只有在西放掉这墩<img src="c.gif" width="13"
+                                          height="11">的情况下才能成功。而更可能的是西多半会用<img src="c.gif" width="13"
+                                          height="11">A得进，并打出第二轮<img src="s.gif" width="13"
+                                          height="11">，从而使你没有快速进张能够进入明手，并用<img src="c.gif" width="13"
+                                          height="11">来垫牌。而在你能够用<img src="c.gif" width="13"
+                                          height="11">垫牌之前，东将立即得进你打出的<img src="d.gif" width="13" height="11">，并兑现一墩<img
+                                          src="s.gif" width="13" height="11">而使你宕
+                                        1。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">如果你打算在这副牌上避免丢失 1 墩，你就必须首先设法切断对方二人之间的联通。东可能在<img src="h.gif"
+                                          width="13" height="11">和<img src="c.gif" width="13" height="11">中没有进张，但是他在<img
+                                          src="d.gif" width="13" height="11">中肯定有一个进张。因此在第二墩牌时，你应当由暗手出一<img src="d.gif"
+                                          width="13" height="11">。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">如果对方继续回出<img src="d.gif" width="13" height="11">，你就明手将吃，接着由明手出<img
+                                          src="c.gif" width="13" height="11">K。而如果对方回出<img src="s.gif" width="13"
+                                          height="11">，你就用<img src="s.gif" width="13"
+                                          height="11">K得进，并由暗手出一将牌。假设正如你所希望的那样，<img src="c.gif" width="13"
+                                          height="11">A和<img src="h.gif" width="13"
+                                          height="11">A都在西的手中，东就无法再得牌进手，而你暗手的<img src="s.gif" width="13"
+                                          height="11">输张最终就能在明手的<img src="c.gif" width="13" height="11">赢张上垫掉。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table145">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A 8 5<br><img
+                                                  src="h.gif" width="13" height="11"> A K 6 4<br><img src="d.gif"
+                                                  width="13" height="11"> 9 4<br><img src="c.gif" width="13"
+                                                  height="11"> A 10 6 2</font>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">双方无局&nbsp; 东发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">西</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="h.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="s.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="s.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> Q 10 9 6 3<br><img
+                                                  src="h.gif" width="13" height="11"> 7 3<br><img src="d.gif" width="13"
+                                                  height="11"> K Q J<br><img src="c.gif" width="13" height="11"> Q 8 4
+                                              </font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="h.gif" width="13" height="11">J给你明手<img src="h.gif"
+                                          width="13" height="11">A得进。在你兑现<img src="s.gif" width="13"
+                                          height="11">A时，东掉出<img src="s.gif" width="13" height="11">K。你计划怎样打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">从东的开叫看，<img src="c.gif" width="13" height="11">K标明在东的手中，所以你的失墩看来只有
+                                        1 墩<img src="s.gif" width="13" height="11">、1 墩<img src="d.gif" width="13"
+                                          height="11">和
+                                        1 墩<img src="c.gif" width="13"
+                                          height="11">。但是，为了做出你的赢墩，你必须丢失几次出牌权，这样对方就有可能多次回出<img src="h.gif" width="13"
+                                          height="11">，使你将牌遭受严重消耗的危险。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">假设你马上送一<img src="s.gif" width="13" height="11">给西的<img src="s.gif"
+                                          width="13" height="11">J。你可以得进西回出的<img src="h.gif" width="13"
+                                          height="11">，叫完将牌，再出<img src="d.gif" width="13" height="11">K。但是东在用<img
+                                          src="d.gif" width="13" height="11">A得进后，就会回出一<img src="h.gif" width="13"
+                                          height="11">迫使你用最后一张将牌将吃。这样你就根本无法能够得到
+                                        2 墩<img src="c.gif" width="13" height="11">来完成定约。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">显然你必须更好地在时机上对防守方的几个进张加以控制，亦即你必须做到要在西手中已无<img src="h.gif" width="13"
+                                          height="11">可以回出的时候，才送给他得进<img src="s.gif" width="13"
+                                          height="11">J这墩牌。因此，第三墩牌时你的正确行动是攻击<img src="d.gif" width="13"
+                                          height="11">，并逼出<img src="d.gif" width="13" height="11">A。然后由明手得进对方回出的<img
+                                          src="h.gif" width="13" height="11">，接着由明手出一<img src="c.gif" width="13"
+                                          height="11">给暗手的<img src="c.gif" width="13"
+                                          height="11">Q。此时东最好的对策，也只不过是立即用<img src="c.gif" width="13"
+                                          height="11">K得进，并回出一<img src="h.gif" width="13" height="11">，这时你可以用<img
+                                          src="s.gif" width="13" height="11">9将吃以进行反攻。不管西是否用将牌超吃，你都可以毫无困难地做成定约。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table146">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A K J 10 3<br><img
+                                                  src="h.gif" width="13" height="11"> A K 9 5 3<br><img src="d.gif"
+                                                  width="13" height="11"> 2<br><img src="c.gif" width="13" height="11">
+                                                K 4</font>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">双方无局&nbsp; 西发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">西</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">1<img src="d.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">×</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="d.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">×</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="s.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="s.gif" width="13" height="11"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td vAlign="top" width="64%" colSpan="4" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> 9 7 5 2<br><img
+                                                  src="h.gif" width="13" height="11"> 7 4<br><img src="d.gif" width="13"
+                                                  height="11"> 10 9 6<br><img src="c.gif" width="13" height="11"> J 5 3
+                                                2</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">拿坏牌的牌手，有时候也是能得到补偿的。西首攻<img src="h.gif" width="13"
+                                          height="11">10，明手<img src="h.gif" width="13" height="11">A得进，东跟<img
+                                          src="h.gif" width="13" height="11">6。在你明手兑现<img src="s.gif" width="13"
+                                          height="11">A时，东跟<img src="s.gif" width="13" height="11">6，西跟<img src="s.gif"
+                                          width="13" height="11">4。你计划怎样往下打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2"> <img src="c.gif" width="13"
+                                          height="11">A多半处于对你有利的位置，所以这里的问题，就在于把两个高级花色的输墩限制为 1 墩。只要<img src="h.gif"
+                                          width="13" height="11">的分配不比
+                                        4—2 更坏，就应该能够达到这个目的。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">但是此刻就兑现<img src="s.gif" width="13" height="11">K，并不安全。如果东有 4 张<img
+                                          src="h.gif" width="13" height="11">，则西多半会持有 3 张<img src="s.gif" width="13"
+                                          height="11">，同时他绝不会在你将吃第三轮<img src="h.gif" width="13"
+                                          height="11">时用将牌超吃来给你帮忙。相反，他将随便垫一张牌，这样就使得你被困在暗手，无法快速进入明手。之后不管你暗手出<img
+                                          src="c.gif" width="13" height="11">或是出<img src="d.gif" width="13"
+                                          height="11">，西都会立即得进，接着兑现<img src="s.gif" width="13"
+                                          height="11">Q，把你暗手最后的一张叫牌叫掉，结果使得你在四个花色中至少都各有一个输墩。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">那么你应该在第三墩牌时兑现<img src="h.gif" width="13" height="11">K，并接着打第三轮<img
+                                          src="h.gif" width="13" height="11">将吃吗？这个打法并不更好。西可能将吃，并打一<img src="d.gif"
+                                          width="13" height="11">给他同伴东得进，接着再将牌超吃一次<img src="h.gif" width="13"
+                                          height="11">，而使你宕
+                                        1。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">因此你必须首先出一<img src="d.gif" width="13"
+                                          height="11">，以便切断对方两人之间的联通。这样，你将吃<img src="h.gif" width="13"
+                                          height="11">并且最多只遭受一次将牌超吃的道路就扫清了。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table147">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A K 8 2<br><img
+                                                  src="h.gif" width="13" height="11"> J 9 8 5 4<br><img src="d.gif"
+                                                  width="13" height="11"> A K<br><img src="c.gif" width="13"
+                                                  height="11"> 10 3</font>
+                                          <td width="64%" colSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东西有局&nbsp; 南发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="c.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3<img src="h.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">4<img src="c.gif" width="13" height="11"></font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">5<img src="c.gif" width="13" height="11"></font>
+                                        </tr>
+                                        <tr>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="32%">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="2" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> 7 3<br><img
+                                                  src="h.gif" width="13" height="11"> 3<br><img src="d.gif" width="13"
+                                                  height="11"> 8 6 4<br><img src="c.gif" width="13" height="11"> A Q J 8
+                                                7 5 2</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="s.gif" width="13" height="11">J明手的<img src="s.gif"
+                                          width="13" height="11">A得进。你计划怎样打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">如果将牌不比 3—1 更坏，前景是很好的。将牌的一飞有 50% 的成功机会。但是由明手将吃暗手的一个<img src="d.gif"
+                                          width="13" height="11">输张，有更大的成功机会。直接了当的打法是先兑现<img src="d.gif" width="13"
+                                          height="11">A和
+                                        K，再由明手出<img src="c.gif" width="13" height="11">给暗手的<img src="c.gif" width="13"
+                                          height="11">A，接着由明手<img src="c.gif" width="13" height="11">10将吃第三轮<img
+                                          src="d.gif" width="13" height="11">。然而这个打法将出现不易回入暗手的困难。如果你打算将吃第三轮<img
+                                          src="s.gif" width="13" height="11">回入暗手，这个办法过于冒险，因此这时你只送掉一墩<img src="h.gif"
+                                          width="13" height="11">。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">在此刻送一墩<img src="h.gif" width="13" height="11">给防守方，本身就是危险的事情。西可能只有
+                                        3 张<img src="d.gif" width="13" height="11">，但却有 K9X
+                                        三张<img src="c.gif" width="13" height="11">，如果真是这样，则东在得进这墩<img src="h.gif"
+                                          width="13" height="11">之后再回出一<img src="d.gif" width="13"
+                                          height="11">，就可为防守方升级出来第二个将牌赢墩。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">只要略为深入加以思考，就能很容易地避免上述危险。正确的打法是在兑现<img src="d.gif" width="13"
+                                          height="11">A和 K 之后，在第 4 墩牌时就送掉<img src="h.gif" width="13"
+                                          height="11">。在这个较早的时刻，对方较少可能能够对你作出什么破坏性的攻击。你可以用<img src="c.gif" width="13"
+                                          height="11">A得进对方回出的将牌，由明手将吃<img src="d.gif" width="13"
+                                          height="11">，并兑现掉明手的<img src="s.gif" width="13"
+                                          height="11">K作为一个额外的预防措施。接着将吃<img src="h.gif" width="13"
+                                          height="11">回入暗手，由暗手出<img src="c.gif" width="13" height="11">Q逼出<img
+                                          src="c.gif" width="13"
+                                          height="11">K。由于这里你有一个畅通无阻的通道可以回入暗手，所以防守方将无法能够升级出第二个将牌赢墩。</font>
+                                    </p>
+                                    <blockquote>
+                                      <blockquote>
+                                        <hr align="left">
+                                      </blockquote>
+                                    </blockquote>
+                                    <div align="center">
+                                      <table width="42%" id="table148">
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> 9 6 3<br><img
+                                                  src="h.gif" width="13" height="11"> A 9 6 5<br><img src="d.gif"
+                                                  width="13" height="11"> 7 6 4<br><img src="c.gif" width="13"
+                                                  height="11"> K 9 3</font>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">双方无局&nbsp; 西发牌</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">西</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">北</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">东</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">南</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">2<img src="h.gif" width="13" height="11"></font><sup>
+                                                <font size="2">*</font>
+                                              </sup>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">2NT</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%" rowSpan="3">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">3NT</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                          <td width="16%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="64%" colSpan="4">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">—</font>
+                                        </tr>
+                                        <tr>
+                                          <td vAlign="top" width="64%" colSpan="4" rowSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2">* 弱 2 副开叫，6—10 大牌点。</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="36%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> Q 8 2<br><img
+                                                  src="h.gif" width="13" height="11"> Q 4 3<br><img src="d.gif"
+                                                  width="13" height="11"> A K J 10 9<br><img src="c.gif" width="13"
+                                                  height="11"> A 4</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西首攻<img src="c.gif" width="13" height="11">10。你让西赢得这墩<img
+                                          src="c.gif" width="13" height="11">，接着西再出<img src="c.gif" width="13"
+                                          height="11">7给你暗手的<img src="c.gif" width="13" height="11">A，东先后很出<img
+                                          src="c.gif" width="13" height="11">8和
+                                        6 而完成回声信号。你兑现<img src="d.gif" width="13" height="11">A和 K，东在第二轮<img src="d.gif"
+                                          width="13" height="11">上掉出<img src="d.gif" width="13"
+                                          height="11">Q，这使你得以松一口气。你计划怎样往下打牌？</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">西的弱二副开叫标明其余 6 张<img src="h.gif" width="13"
+                                          height="11">全在西的手中。并且你已知道他持有 3 张<img src="d.gif" width="13" height="11">和 2
+                                        张<img src="c.gif" width="13" height="11">，因此他必然持有 2 张<img src="s.gif" width="13"
+                                          height="11">，且其中有一个顶张大牌，这样才符合他开叫所应具有的牌点。显然，运用投入法，是得到第
+                                        9 墩牌的最好办法。你可能打算先再兑现一墩<img src="d.gif" width="13" height="11">，然后由暗手出<img
+                                          src="h.gif" width="13" height="11">3，贮备在西打<img src="h.gif" width="13"
+                                          height="11">10时明手就放掉。这样西就只得被迫在<img src="h.gif" width="13" height="11">中或在<img
+                                          src="s.gif" width="13" height="11">中送给你第
+                                        9 墩牌。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">但西并不一定会与你的这个计划进行合作。西有可能在你的<img src="h.gif" width="13"
+                                          height="11">3上跟<img src="h.gif" width="13"
+                                          height="11">2，迫使你明手得进，这样就可以把你击败，因为这时你将永远无法回入暗手来兑现剩余的
+                                        2 墩<img src="d.gif" width="13" height="11">。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">你必须安排别的方式来实现这个投入法，你必须希望西的<img src="s.gif" width="13" height="11">是
+                                        AX 双张，或者是 KJ 双张（译注：KX
+                                        双张也可）。无论是这二者中的哪一种情况，东在<img src="s.gif" width="13"
+                                          height="11">花色中都最多只有一次进张，于是你就可以设法切断东西之间的联通。正确的打法，是在第
+                                        5 墩牌时由暗手出一小<img src="s.gif" width="13" height="11">。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">假若东得进这墩<img src="s.gif" width="13" height="11">，则不管在第三轮<img
+                                          src="c.gif" width="13" height="11">上西是否垫掉<img src="s.gif" width="13"
+                                          height="11">A（或<img src="s.gif" width="13" height="11">K）（译注：东这时不能回出<img
+                                          src="s.gif" width="13" height="11">，只能回出<img src="c.gif" width="13"
+                                          height="11">），他最后都要落入<img src="h.gif" width="13"
+                                          height="11">的残局陷阱。要想避免落入残局陷阱，西可以在第一轮<img src="s.gif" width="13"
+                                          height="11">时用<img src="s.gif" width="13" height="11">A（或<img src="s.gif"
+                                          width="13" height="11">K）得进，然后打出他的第三张<img src="d.gif" width="13"
+                                          height="11">脱手。但是，这样你就能够把暗手的<img src="s.gif" width="13" height="11">Q打好成为第
+                                        9 墩牌。</font>
+                                    </p>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">全副牌如下：</font>
+                                    </p>
+                                    <div align="center">
+                                      <table width="42%" id="table149">
+                                        <tr>
+                                          <td width="35%">
+                                            <p style="line-height: 150%" align="left">
+                                          <td width="65%" colSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> 9 6 3<br><img
+                                                  src="h.gif" width="13" height="11"> A 9 6 5<br><img src="d.gif"
+                                                  width="13" height="11"> 7 6 4<br><img src="c.gif" width="13"
+                                                  height="11"> K 9 3</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="35%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> A 7<br><img
+                                                  src="h.gif" width="13" height="11"> K J 10 8 7 2<br><img src="d.gif"
+                                                  width="13" height="11"> 8 5 2<br><img src="c.gif" width="13"
+                                                  height="11"> 10 7</font>
+                                          <td width="30%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="table.gif" width="50" height="50"></font>
+                                          <td width="35%">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> K J 10 5 4<br><img
+                                                  src="h.gif" width="13" height="11"> —<br><img src="d.gif" width="13"
+                                                  height="11"> Q 3<br><img src="c.gif" width="13" height="11"> Q J 8 6 5
+                                                2</font>
+                                        </tr>
+                                        <tr>
+                                          <td width="35%">
+                                            <p style="line-height: 150%" align="left">
+                                          <td width="65%" colSpan="2">
+                                            <p style="line-height: 150%" align="left">
+                                              <font size="2"><img src="s.gif" width="13" height="11"> Q 8 2<br><img
+                                                  src="h.gif" width="13" height="11"> Q 4 3<br><img src="d.gif"
+                                                  width="13" height="11"> A K J 10 9<br><img src="c.gif" width="13"
+                                                  height="11"> A 4</font>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <p style="line-height: 150%" align="left">
+                                      <font size="2">注意，如果你立刻拿完暗手的全部<img src="d.gif" width="13"
+                                          height="11">赢墩，这个定约就无法做成。因为这样就会使明手难以垫牌，以致明手的牌遭受严重削弱而失败。<br></font>
+                                    </p>
+                                    <p style="line-height: 150%" align="right"><img border="0"
+                                        src="../../../images/zxdp_50.gif" width="50" height="50">
+                                  </div>
+                                </blockquote>
+                            </TR>
+                        </TABLE>
+                      </div>
+                      <TABLE width=643 align=center border=0 id="table129" height="6">
+                        <TBODY>
+                          <TR>
+                            <TD style="font-size: 13px; line-height: 17px">
+                              <p style="line-height: 1px">　
+                          </TR>
+                      </TABLE>
+                    </DIV>
+                </TR>
+            </TABLE>
+          </DIV>
+      </TR>
+  </TABLE>
+  <TABLE width=745 align=center border=0 id="table130" height="9">
+    <TBODY>
+      <TR>
+        <TD style="font-size: 13px; line-height: 17px">
+          <hr width="960" size="1" color="#CCCCCC">
+      </TR>
+  </TABLE>
+  <TABLE width=966 align=center border=0 id="table133" height="37">
+    <TBODY>
+      <TR>
+        <TD style="font-size: 13px; line-height: 17px">
+          <p align="center" style="line-height: 150%">
+            <font color="#CCCCCC" face="Arial" style="font-size: 9pt">
+              重要说明：本站资料大多从网上搜集得来，旨在为桥牌爱好者们提供学习交流的方便，部分内容经过重新编排整理，若有侵权，请及时告知，!<br>13P对很多桥友来说都是一个值得尊敬和留念的地方，前辈的心血不应消失掉。谢谢百度贴吧的贵州桥友xy_alpha提供了保存的数据。<br>东莞桥牌网于2013年1月15日恢复了13P在线浏览数据，并维持原创造者13P及宰相肚皮前辈的整体架构不再改动和更新!<br>
+              粤ICP备08117329号-8ICP备05073487号</font>
+            <font size="2" color="#CCCCCC" face="Arial">&nbsp; </font>
+            <font color="#CCCCCC" face="Arial" size="3">&copy;</font>
+            <font size="2" color="#CCCCCC" face="Arial">2008 <a href="../../../../../index.html"
+                style="text-decoration: none">
+                <font color="#CCCCCC">www.dgbrg.com/13P/</font>
+              </a>&nbsp;&nbsp;
+              <a href="http://www.dgbrg.com" style="text-decoration: none">
+                <font color="#CCCCCC">东莞桥牌网</font>
+              </a>&nbsp;&nbsp; Since
+              2000-09-01<br>
+              <p align="center">
+            </font>
+      </TR>
+  </TABLE>
+
 </html>
